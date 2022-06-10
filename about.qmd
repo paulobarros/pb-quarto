@@ -1,0 +1,18 @@
+---
+title: "Paulo Barros"
+image: pb.jpeg
+about:
+  template: trestles
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/paulobarros
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/pbarrosjr
+    - icon: instagram
+      text: Instagram
+      href: https://instagram.com/pbarrosjr
+---
+
+I am a **Birdwatcher** who became a **Scientist**, **Data Science** enthusiast, I love **Ornithology** and **Herpetology**, graduate student of **Genetics, Biodiversity and Conservation**, Liz's partner, Otto's dad, sports fan (![](saints.png) #whodatnation), proud Northeastern Brazilian ![](bahia.png) and I can also make good pancakes!

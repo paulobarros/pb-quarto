@@ -1,0 +1,19 @@
+---
+title: "se algo aqui te ajudar"
+subtitle: "passe adiante!"
+listing:
+  - id: blog-pt
+    contents: posts/*/pt/*.qmd
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: true
+    filter-ui: true
+    fields: [image, date, title, author, reading-time, categories]
+page-layout: full
+title-block-banner: true
+---
+
+::: {#blog-pt}
+
+:::
