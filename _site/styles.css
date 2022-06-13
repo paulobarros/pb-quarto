@@ -1,15 +1,17 @@
 /* css styles */
 
 .navbar-title{
-  color: #000000;
-  font-size: 1.10em;
-  line-height: 1.10em;
+  color: #353434;
+  font-size: 1em;
+  line-height: 1em;
   padding-bottom: 0;
-  font-family: "Barlow Condensed";
+  font-weight: 300;
+  font-family: "Saira Extra Condensed";
+  text-shadow: 1px 1px #BABABA;
 }
 
 .navbar-brand img{
-  max-height: 28px;
+  max-height: 24px;
   padding-bottom: 5px;
   
 }
