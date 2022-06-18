@@ -2,7 +2,7 @@
 title: "Paulo Barros"
 image: pb.jpeg
 about:
-  template: trestles
+  template: jolla
   links:
     - icon: github
       text: Github
