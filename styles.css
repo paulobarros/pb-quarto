@@ -6,7 +6,7 @@
   line-height: 1em;
   padding-bottom: 0;
   font-weight: 300;
-  font-family: "Saira Extra Condensed";
+  font-family: "Major Mono Display";
   text-shadow: 1px 1px #BABABA;
 }
 
@@ -56,9 +56,19 @@ pre code {
 .quarto-title-banner {
     margin-bottom: 1em;
     color: #595959;
-    background: #f4f4f038;
+    background: none;
 }
 
+#title-block-header.quarto-title-block.default .quarto-title .title {
+  font-family: "DM Serif Text";
+  font-style: italic;
+  color: #FFFFFF;
+  
+}
+
+.lead {
+  color: #FFFFFF ;
+}
 
 .quarto-title .quarto-categories .quarto-category {
     padding: 0.25em 0.75em;
@@ -88,4 +98,10 @@ ol, ul, dl {
 #quarto-appendix.default .footnotes ol, #quarto-appendix.default .footnotes ol li>p:last-of-type, #quarto-appendix.default .quarto-appendix-contents>p:last-of-type {
     margin-bottom: 0;
     font-size: 14px;
+}
+
+#title-block-header {
+  background-image: url('HeadCover.png');
+  padding-top: 100px;
+  color: #FFFFFF;
 }

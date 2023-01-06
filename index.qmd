@@ -1,6 +1,6 @@
 ---
-title: "se algo aqui te ajudar"
-subtitle: "passe adiante!"
+title: "\"Todos nós por natureza desejamos conhecimento.\""
+subtitle: "- Aristóteles"
 listing:
   - id: blog-pt
     contents: posts/*/pt/*.qmd
