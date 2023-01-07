@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Paulo Barros",
+    "section": "",
+    "text": "I am a Birdwatcher who became a Scientist, Data Science enthusiast, I love Ornithology and Herpetology, graduate student of Genetics, Biodiversity and Conservation, Liz’s partner, Otto’s dad, sports fan ( #whodatnation), proud Northeastern Brazilian  and I can also make good pancakes!"
+  },
+  {
+    "objectID": "index-us.html",
+    "href": "index-us.html",
+    "title": "“All men by nature desire knowledge”",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "“Todos nós por natureza desejamos conhecimento.”",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nGerando manuscritos acadêmicos com referências utilizando R markdown\n\n\nGerenciar referências é uma dor de cabeça! A produção de manuscritos acadêmicos pode se tornar um processo muito mais simples com a adoção de ferramentas como o rmarkdown, e é isso que você vai aprender nesse tutorial!\n\n\n\n\nRmarkdown\n\n\nABNT\n\n\n \n\n\n\n\nJul 15, 2021\n\n\nPaulo Barros\n\n\n14 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/en.html",
+    "href": "posts/en.html",
+    "title": "Paulo Barros",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items\n\n\n\n\n\n\nReusehttps://creativecommons.org/licenses/by/4.0/CitationBibTeX citation:@online{untitled,\n  author = {},\n  title = {Paulo {Barros}},\n  langid = {en}\n}\nFor attribution, please cite this work as:\n“Paulo Barros.” n.d."
+  },
+  {
+    "objectID": "posts/pt.html",
+    "href": "posts/pt.html",
+    "title": "Paulo Barros",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nGerando manuscritos acadêmicos com referências utilizando R markdown\n\n\nGerenciar referências é uma dor de cabeça! A produção de manuscritos acadêmicos pode se tornar um processo muito mais simples com a adoção de ferramentas como o rmarkdown, e é isso que você vai aprender nesse tutorial!\n\n\n\n\nRmarkdown\n\n\nABNT\n\n\n \n\n\n\n\nJul 15, 2021\n\n\nPaulo Barros\n\n\n14 min\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\nReusehttps://creativecommons.org/licenses/by/4.0/CitationBibTeX citation:@online{untitled,\n  author = {},\n  title = {Paulo {Barros}},\n  langid = {en}\n}\nFor attribution, please cite this work as:\n“Paulo Barros.” n.d."
+  },
+  {
     "objectID": "posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt/index.html",
     "href": "posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt/index.html",
     "title": "Gerando manuscritos acadêmicos com referências utilizando R markdown",
@@ -40,40 +75,5 @@
     "title": "Gerando manuscritos acadêmicos com referências utilizando R markdown",
     "section": "5. Considerações finais",
     "text": "5. Considerações finais\nE então? Chega de sofrer com organização de bibliografia e copiar e colar tabelas de resultados e gráficos. Espero que o tutorial tenha sido útil, qualquer dúvida ou comentário vocês me encontram pelas redes sociais. E por favor se acharem este conteúdo útil compartilhem com os colegas, conhecimento se constrói em comunidade!"
-  },
-  {
-    "objectID": "posts/pt.html",
-    "href": "posts/pt.html",
-    "title": "Paulo Barros",
-    "section": "",
-    "text": "Reusehttps://creativecommons.org/licenses/by/4.0/CitationBibTeX citation:@online{untitled,\n  author = {},\n  title = {Paulo {Barros}},\n  langid = {en}\n}\nFor attribution, please cite this work as:\n“Paulo Barros.” n.d."
-  },
-  {
-    "objectID": "posts/en.html",
-    "href": "posts/en.html",
-    "title": "Paulo Barros",
-    "section": "",
-    "text": "Reusehttps://creativecommons.org/licenses/by/4.0/CitationBibTeX citation:@online{untitled,\n  author = {},\n  title = {Paulo {Barros}},\n  langid = {en}\n}\nFor attribution, please cite this work as:\n“Paulo Barros.” n.d."
-  },
-  {
-    "objectID": "index-us.html",
-    "href": "index-us.html",
-    "title": "if you find something useful here",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "se algo aqui te ajudar",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n\nGerenciar referências é uma dor de cabeça! A produção de manuscritos acadêmicos pode se tornar um processo muito mais simples com a adoção de ferramentas como o rmarkdown, e é isso que você vai aprender nesse tutorial!\n\n\n\n\nRmarkdown\n\n\nABNT\n\n\n \n\n\n\n\nJul 15, 2021\n\n\nPaulo Barros\n\n\n14 min\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Paulo Barros",
-    "section": "",
-    "text": "I am a Birdwatcher who became a Scientist, Data Science enthusiast, I love Ornithology and Herpetology, graduate student of Genetics, Biodiversity and Conservation, Liz’s partner, Otto’s dad, sports fan ( #whodatnation), proud Northeastern Brazilian  and I can also make good pancakes!"
   }
 ]
