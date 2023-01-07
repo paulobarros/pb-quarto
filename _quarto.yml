@@ -3,6 +3,9 @@ project:
 
 website:
   title: "PAULO BARROS"
+  twitter-card:
+    creator: "@pbarrosjr"
+  site-url: https://paulobarros.com.br
   navbar:
       logo: LogoSiteNovo.png
       right:
@@ -33,6 +36,9 @@ format:
       - litera
       - pb-quarto.scss
     css: styles.css
+    highlight-style: dracula
+    code-line-numbers: true
+    toc: true
 
-editor: visual
+editor: source
 

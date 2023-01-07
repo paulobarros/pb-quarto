@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.280">
@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Paulo Barros">
-<meta name="dcterms.date" content="2021-07-15">
 
-<title>PAULO BARROS - Gerando manuscritos acadêmicos com referências utilizando R markdown</title>
+<title>PAULO BARROS - Gerando manuscritos acadêmicos com referências utilizando Rmarkdown</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -131,20 +130,25 @@ div.csl-indent {
   "type": "overlay",
   "limit": 20,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar"
   }
 }</script>
 
 
 <link rel="stylesheet" href="../../../styles.css">
+<meta name="twitter:title" content="PAULO BARROS - Gerando manuscritos acadêmicos com referências utilizando Rmarkdown">
+<meta name="twitter:description" content="Gerenciar referências não precisa ser uma dor de cabeça!">
+<meta name="twitter:image" content="https://paulobarros.com.br/posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt/img/postthumb.jpg">
+<meta name="twitter:creator" content="@pbarrosjr">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="floating nav-fixed">
@@ -205,8 +209,8 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Gerando manuscritos acadêmicos com referências utilizando R markdown</h1>
-            <p class="subtitle lead"></p><p>Gerenciar referências é uma dor de cabeça! A produção de manuscritos acadêmicos pode se tornar um processo muito mais simples com a adoção de ferramentas como o <code>rmarkdown</code>, e é isso que você vai aprender nesse tutorial!</p><p></p>
+      <h1 class="title">Gerando manuscritos acadêmicos com referências utilizando Rmarkdown</h1>
+            <p class="subtitle lead"></p><p>Gerenciar referências não precisa ser uma dor de cabeça!</p><p></p>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Rmarkdown</div>
                 <div class="quarto-category">ABNT</div>
@@ -218,16 +222,16 @@ div.csl-indent {
   <div class="quarto-title-meta">
 
       <div>
-      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-heading">Autor</div>
       <div class="quarto-title-meta-contents">
                <p>Paulo Barros </p>
             </div>
     </div>
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">Data de Publicação</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 15, 2021</p>
+        <p class="date">15 de julho de 2021</p>
       </div>
     </div>
     
@@ -339,22 +343,19 @@ div.csl-indent {
 <p>Como o arquivo markdown é um arquivo misto, precisamos diferenciar o que é texto do que será interpretado como código em R. Para isso usamos os blocos de código ou <em>code chunks</em>. Estes blocos são delimitados pelo bloco:</p>
 <pre><code>```{r} ` `
 # seu código em R
-```
-</code></pre>
+```</code></pre>
 <p>Ainda assim, cada bloco de código pode ser configurado individualmente, o que nos dá grande flexibilidade quanto ao que incluir nos nossos arquivos finais, e como estes blocos serão interpretados ou não na geração dos nossos documentos.</p>
 <ol start="3" type="1">
 <li>Texto em Markdown</li>
 </ol>
 <p>Markdown nada mais é que uma linguagem de marcação onde um conjunto de caracteres tem significado especial e são interpretados na geração do arquivo produzindo assim um texto formatado seguindo geralmente formatação nos padrões das tags de HTML, sendo estas traduzidas em outros formatos quando gerados arquivos em PDF (LateX) e Word. No arquivo de cola mencionado anteriormente é possível ver todos os caracteres que compõe o conjunto de formatadores do markdown. Mas para exemplificar:</p>
-<pre><code>
-### Isso é um tipo de cabeçalho (header H3)
+<pre><code>### Isso é um tipo de cabeçalho (header H3)
 
 * Isso gera um item de lista
 
 **Negrito**
 
-*Itálico* 
-</code></pre>
+*Itálico* </code></pre>
 <p>e o resultado dos textos formatados é:</p>
 <section id="isso-é-um-tipo-de-cabeçalho-header-h3" class="level3">
 <h3 class="anchored" data-anchor-id="isso-é-um-tipo-de-cabeçalho-header-h3">Isso é um tipo de cabeçalho (header H3)</h3>
@@ -383,23 +384,23 @@ div.csl-indent {
 <p>Os dados foram coletados pela <a href="https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php">Drª Kirsten Gorman</a> na Estação Palmer na Antartica. O projeto faz parte da Rede de Pesquisas Ecológicas de Longa Duração (LTER - <em>Long Term Research Network</em>). O data set apresenta informações de três espécies de pinguins do gênero <em>Pygoscelis</em> que ocorrem no arquipélago de Palmer, esses bonitinhos ai da ilustração, conhecidos comumente como Adélie (<em>Pygoscelis adeliae</em>), Gentoo (<em>Pygoscelis papua</em>) e Chinstrap (<em>Pygoscelis antarticus</em>). São basicamente medidas biométricas de bico e nadadeira, peso corporal, informação de sexo e o ano em que foram amostrados os animais.</p>
 <p>No exemplo vou utilizar outro pacote muito bacana para manipulação de dados, o <code>tidyverse</code>, se você ainda não tem recomendo instalar, novamente só rodar <code>install.packages("tidyverse")</code>. Este pacote é uma coleção de outros pacotes utilitários que facilitam demais a vida na hora de manipular os mais diversos tipos de conjuntos de dados, não é meu objetivo falar dele aqui, isso é tema de um outro tutorial, prometo. Vamos dar uma olhada nos dados?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse, <span class="at">quietly =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt, <span class="at">quietly =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="at">package=</span><span class="st">'palmerpenguins'</span>)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span> <span class="fu">head</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(tidyverse, <span class="at">quietly =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">library</span>(gt, <span class="at">quietly =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="fu">data</span>(<span class="at">package=</span><span class="st">'palmerpenguins'</span>)</span>
+<span id="cb3-7"><a href="#cb3-7"></a></span>
+<span id="cb3-8"><a href="#cb3-8"></a>penguins <span class="sc">%&gt;%</span> <span class="fu">head</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>  <span class="fu">gt</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="ujzvxgnbdj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ymxauetvjx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#ujzvxgnbdj) .gt_table {
+:where(#ymxauetvjx) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -424,7 +425,7 @@ div.csl-indent {
   border-left-color: #D3D3D3;
 }
 
-:where(#ujzvxgnbdj) .gt_heading {
+:where(#ymxauetvjx) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -436,7 +437,12 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-:where(#ujzvxgnbdj) .gt_title {
+:where(#ymxauetvjx) .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+:where(#ymxauetvjx) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -448,7 +454,7 @@ div.csl-indent {
   border-bottom-width: 0;
 }
 
-:where(#ujzvxgnbdj) .gt_subtitle {
+:where(#ymxauetvjx) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -460,13 +466,13 @@ div.csl-indent {
   border-top-width: 0;
 }
 
-:where(#ujzvxgnbdj) .gt_bottom_border {
+:where(#ymxauetvjx) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ujzvxgnbdj) .gt_col_headings {
+:where(#ymxauetvjx) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -481,7 +487,7 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-:where(#ujzvxgnbdj) .gt_col_heading {
+:where(#ymxauetvjx) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -501,7 +507,7 @@ div.csl-indent {
   overflow-x: hidden;
 }
 
-:where(#ujzvxgnbdj) .gt_column_spanner_outer {
+:where(#ymxauetvjx) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -513,15 +519,15 @@ div.csl-indent {
   padding-right: 4px;
 }
 
-:where(#ujzvxgnbdj) .gt_column_spanner_outer:first-child {
+:where(#ymxauetvjx) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#ujzvxgnbdj) .gt_column_spanner_outer:last-child {
+:where(#ymxauetvjx) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#ujzvxgnbdj) .gt_column_spanner {
+:where(#ymxauetvjx) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -533,7 +539,7 @@ div.csl-indent {
   width: 100%;
 }
 
-:where(#ujzvxgnbdj) .gt_group_heading {
+:where(#ymxauetvjx) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -556,9 +562,10 @@ div.csl-indent {
   border-right-width: 1px;
   border-right-color: #D3D3D3;
   vertical-align: middle;
+  text-align: left;
 }
 
-:where(#ujzvxgnbdj) .gt_empty_group_heading {
+:where(#ymxauetvjx) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -573,15 +580,15 @@ div.csl-indent {
   vertical-align: middle;
 }
 
-:where(#ujzvxgnbdj) .gt_from_md > :first-child {
+:where(#ymxauetvjx) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#ujzvxgnbdj) .gt_from_md > :last-child {
+:where(#ymxauetvjx) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#ujzvxgnbdj) .gt_row {
+:where(#ymxauetvjx) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -600,7 +607,7 @@ div.csl-indent {
   overflow-x: hidden;
 }
 
-:where(#ujzvxgnbdj) .gt_stub {
+:where(#ymxauetvjx) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -613,7 +620,7 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-:where(#ujzvxgnbdj) .gt_stub_row_group {
+:where(#ymxauetvjx) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -627,11 +634,11 @@ div.csl-indent {
   vertical-align: top;
 }
 
-:where(#ujzvxgnbdj) .gt_row_group_first td {
+:where(#ymxauetvjx) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#ujzvxgnbdj) .gt_summary_row {
+:where(#ymxauetvjx) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -641,16 +648,16 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-:where(#ujzvxgnbdj) .gt_first_summary_row {
+:where(#ymxauetvjx) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#ujzvxgnbdj) .gt_first_summary_row.thick {
+:where(#ymxauetvjx) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#ujzvxgnbdj) .gt_last_summary_row {
+:where(#ymxauetvjx) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -660,7 +667,7 @@ div.csl-indent {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ujzvxgnbdj) .gt_grand_summary_row {
+:where(#ymxauetvjx) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -670,7 +677,7 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-:where(#ujzvxgnbdj) .gt_first_grand_summary_row {
+:where(#ymxauetvjx) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -680,11 +687,11 @@ div.csl-indent {
   border-top-color: #D3D3D3;
 }
 
-:where(#ujzvxgnbdj) .gt_striped {
+:where(#ymxauetvjx) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#ujzvxgnbdj) .gt_table_body {
+:where(#ymxauetvjx) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -693,7 +700,7 @@ div.csl-indent {
   border-bottom-color: #D3D3D3;
 }
 
-:where(#ujzvxgnbdj) .gt_footnotes {
+:where(#ymxauetvjx) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -707,7 +714,7 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-:where(#ujzvxgnbdj) .gt_footnote {
+:where(#ymxauetvjx) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -716,7 +723,7 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-:where(#ujzvxgnbdj) .gt_sourcenotes {
+:where(#ymxauetvjx) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -730,7 +737,7 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-:where(#ujzvxgnbdj) .gt_sourcenote {
+:where(#ymxauetvjx) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -738,137 +745,130 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-:where(#ujzvxgnbdj) .gt_left {
+:where(#ymxauetvjx) .gt_left {
   text-align: left;
 }
 
-:where(#ujzvxgnbdj) .gt_center {
+:where(#ymxauetvjx) .gt_center {
   text-align: center;
 }
 
-:where(#ujzvxgnbdj) .gt_right {
+:where(#ymxauetvjx) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#ujzvxgnbdj) .gt_font_normal {
+:where(#ymxauetvjx) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#ujzvxgnbdj) .gt_font_bold {
+:where(#ymxauetvjx) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#ujzvxgnbdj) .gt_font_italic {
+:where(#ymxauetvjx) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#ujzvxgnbdj) .gt_super {
+:where(#ymxauetvjx) .gt_super {
   font-size: 65%;
 }
 
-:where(#ujzvxgnbdj) .gt_two_val_uncert {
-  display: inline-block;
-  line-height: 1em;
-  text-align: right;
-  font-size: 60%;
-  vertical-align: -0.25em;
-  margin-left: 0.1em;
-}
-
-:where(#ujzvxgnbdj) .gt_footnote_marks {
+:where(#ymxauetvjx) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#ujzvxgnbdj) .gt_asterisk {
+:where(#ymxauetvjx) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#ujzvxgnbdj) .gt_slash_mark {
-  font-size: 0.7em;
-  line-height: 0.7em;
-  vertical-align: 0.15em;
+:where(#ymxauetvjx) .gt_indent_1 {
+  text-indent: 5px;
 }
 
-:where(#ujzvxgnbdj) .gt_fraction_numerator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: 0.45em;
+:where(#ymxauetvjx) .gt_indent_2 {
+  text-indent: 10px;
 }
 
-:where(#ujzvxgnbdj) .gt_fraction_denominator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: -0.05em;
+:where(#ymxauetvjx) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#ymxauetvjx) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#ymxauetvjx) .gt_indent_5 {
+  text-indent: 25px;
 }
 </style>
 <table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">species</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">island</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">bill_length_mm</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">bill_depth_mm</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">flipper_length_mm</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">body_mass_g</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">sex</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">year</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="species">species</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="island">island</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bill_length_mm">bill_length_mm</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bill_depth_mm">bill_depth_mm</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="flipper_length_mm">flipper_length_mm</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="body_mass_g">body_mass_g</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="sex">sex</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="year">year</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td class="gt_row gt_center">Adelie</td>
-<td class="gt_row gt_center">Torgersen</td>
-<td class="gt_row gt_right">39.1</td>
-<td class="gt_row gt_right">18.7</td>
-<td class="gt_row gt_right">181</td>
-<td class="gt_row gt_right">3750</td>
-<td class="gt_row gt_center">male</td>
-<td class="gt_row gt_right">2007</td></tr>
-    <tr><td class="gt_row gt_center">Adelie</td>
-<td class="gt_row gt_center">Torgersen</td>
-<td class="gt_row gt_right">39.5</td>
-<td class="gt_row gt_right">17.4</td>
-<td class="gt_row gt_right">186</td>
-<td class="gt_row gt_right">3800</td>
-<td class="gt_row gt_center">female</td>
-<td class="gt_row gt_right">2007</td></tr>
-    <tr><td class="gt_row gt_center">Adelie</td>
-<td class="gt_row gt_center">Torgersen</td>
-<td class="gt_row gt_right">40.3</td>
-<td class="gt_row gt_right">18.0</td>
-<td class="gt_row gt_right">195</td>
-<td class="gt_row gt_right">3250</td>
-<td class="gt_row gt_center">female</td>
-<td class="gt_row gt_right">2007</td></tr>
-    <tr><td class="gt_row gt_center">Adelie</td>
-<td class="gt_row gt_center">Torgersen</td>
-<td class="gt_row gt_right">NA</td>
-<td class="gt_row gt_right">NA</td>
-<td class="gt_row gt_right">NA</td>
-<td class="gt_row gt_right">NA</td>
-<td class="gt_row gt_center">NA</td>
-<td class="gt_row gt_right">2007</td></tr>
-    <tr><td class="gt_row gt_center">Adelie</td>
-<td class="gt_row gt_center">Torgersen</td>
-<td class="gt_row gt_right">36.7</td>
-<td class="gt_row gt_right">19.3</td>
-<td class="gt_row gt_right">193</td>
-<td class="gt_row gt_right">3450</td>
-<td class="gt_row gt_center">female</td>
-<td class="gt_row gt_right">2007</td></tr>
-    <tr><td class="gt_row gt_center">Adelie</td>
-<td class="gt_row gt_center">Torgersen</td>
-<td class="gt_row gt_right">39.3</td>
-<td class="gt_row gt_right">20.6</td>
-<td class="gt_row gt_right">190</td>
-<td class="gt_row gt_right">3650</td>
-<td class="gt_row gt_center">male</td>
-<td class="gt_row gt_right">2007</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">39.1</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">18.7</td>
+<td headers="flipper_length_mm" class="gt_row gt_right">181</td>
+<td headers="body_mass_g" class="gt_row gt_right">3750</td>
+<td headers="sex" class="gt_row gt_center">male</td>
+<td headers="year" class="gt_row gt_right">2007</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">39.5</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">17.4</td>
+<td headers="flipper_length_mm" class="gt_row gt_right">186</td>
+<td headers="body_mass_g" class="gt_row gt_right">3800</td>
+<td headers="sex" class="gt_row gt_center">female</td>
+<td headers="year" class="gt_row gt_right">2007</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">40.3</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">18.0</td>
+<td headers="flipper_length_mm" class="gt_row gt_right">195</td>
+<td headers="body_mass_g" class="gt_row gt_right">3250</td>
+<td headers="sex" class="gt_row gt_center">female</td>
+<td headers="year" class="gt_row gt_right">2007</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">NA</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">NA</td>
+<td headers="flipper_length_mm" class="gt_row gt_right">NA</td>
+<td headers="body_mass_g" class="gt_row gt_right">NA</td>
+<td headers="sex" class="gt_row gt_center">NA</td>
+<td headers="year" class="gt_row gt_right">2007</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">36.7</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">19.3</td>
+<td headers="flipper_length_mm" class="gt_row gt_right">193</td>
+<td headers="body_mass_g" class="gt_row gt_right">3450</td>
+<td headers="sex" class="gt_row gt_center">female</td>
+<td headers="year" class="gt_row gt_right">2007</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="island" class="gt_row gt_center">Torgersen</td>
+<td headers="bill_length_mm" class="gt_row gt_right">39.3</td>
+<td headers="bill_depth_mm" class="gt_row gt_right">20.6</td>
+<td headers="flipper_length_mm" class="gt_row gt_right">190</td>
+<td headers="body_mass_g" class="gt_row gt_right">3650</td>
+<td headers="sex" class="gt_row gt_center">male</td>
+<td headers="year" class="gt_row gt_right">2007</td></tr>
   </tbody>
   
   
@@ -889,12 +889,13 @@ div.csl-indent {
 <ul>
 <li><strong>Um arquivo de referências</strong>: existem vários formatos deste arquivo, no caso vamos utilizar o formato BibTeX, já explico o porquê! Esse arquivo nada mais é que uma coleção das informações de cada referência utilizada organizada em um único arquivo.</li>
 </ul>
-<pre><code>@article{gorman2014structural,
-  title={Structural size measurements and isotopic signatures of foraging among adult male and female gentoo penguins (Pygoscelis papua) nesting along the Palmer Archipelago near Palmer Station, 2007-2009},
-  author={Gorman, Kristen and LTER, Palmer Station Antarctica},
-  year={2014},
-  publisher={Environmental Data Initiative}
-}</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1"></a>    @article{gorman2014structural,</span>
+<span id="cb4-2"><a href="#cb4-2"></a>      title={Structural size measurements and isotopic signatures of foraging among adult male and female gentoo penguins (Pygoscelis papua) nesting along the Palmer Archipelago near Palmer Station, 2007-2009},</span>
+<span id="cb4-3"><a href="#cb4-3"></a>      author={Gorman, Kristen and LTER, Palmer Station Antarctica},</span>
+<span id="cb4-4"><a href="#cb4-4"></a>      year={2014},</span>
+<span id="cb4-5"><a href="#cb4-5"></a>      publisher={Environmental Data Initiative}</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    }</span>
+<span id="cb4-7"><a href="#cb4-7"></a></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Como vocês podem ver, nada demais. Apenas um arquivo de texto estruturado com todas as informações da obra citada. As informações podem variar um pouco a depender da fonte de dados, mas basicamente temos neste arquivo:</p>
 <ul>
 <li>Um identificador único: neste caso <code>gorman2014structural</code> é o identificador que usaremos no nosso markdown para referenciar esta obra.</li>
@@ -911,48 +912,46 @@ div.csl-indent {
 </div>
 </div>
 <p>A partir de então é só buscar o código BibTeX de todas as obras que serão citadas e ir inserindo eles um após o outro em um arquivo de texto <strong>e salvar este arquivo com a extensão <code>.bib</code></strong>. Não precisa se preocupar em ordenar as referências de forma alguma neste arquivo, basta que você tome o cuidado de copiar corretamente todo o código BibTeX, lembrando que o código pra uma entrada começa no <code>@</code> e termina na <code>}</code> para cada entrada. No nosso exemplo criarei um arquivo chamado <code>referencias.bib</code> com apenas três obras referenciadas para usarmos como exemplo.</p>
-<pre><code>@article{gorman2014structural,
-  title={Structural size measurements and isotopic signatures of foraging among adult male and female gentoo penguins (Pygoscelis papua) nesting along the Palmer Archipelago near Palmer Station, 2007-2009},
-  author={Gorman, Kristen and LTER, Palmer Station Antarctica},
-  year={2014},
-  publisher={Environmental Data Initiative}
-}
-
-@article{lter2016structural,
-  title={Structural size measurements and isotopic signatures of foraging among adult male and female chinstrap penguins (Pygoscelis antarctica) nesting along the Palmer Archipelago near Palmer Station, 2007-2009},
-  author={LTER, Palmer Station Antarctica and Gorman, Kristen},
-  year={2016},
-  publisher={Environmental Data Initiative}
-}
-
-@article{gorman2014ecological,
-  title={Ecological sexual dimorphism and environmental variability within a community of Antarctic penguins (genus Pygoscelis)},
-  author={Gorman, Kristen B and Williams, Tony D and Fraser, William R},
-  journal={PloS one},
-  volume={9},
-  number={3},
-  pages={e90081},
-  year={2014},
-  publisher={Public Library of Science San Francisco, USA}
-}
-</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1"></a>    @article{gorman2014structural,</span>
+<span id="cb5-2"><a href="#cb5-2"></a>      title={Structural size measurements and isotopic signatures of foraging among adult male and female gentoo penguins (Pygoscelis papua) nesting along the Palmer Archipelago near Palmer Station, 2007-2009},</span>
+<span id="cb5-3"><a href="#cb5-3"></a>      author={Gorman, Kristen and LTER, Palmer Station Antarctica},</span>
+<span id="cb5-4"><a href="#cb5-4"></a>      year={2014},</span>
+<span id="cb5-5"><a href="#cb5-5"></a>      publisher={Environmental Data Initiative}</span>
+<span id="cb5-6"><a href="#cb5-6"></a>    }</span>
+<span id="cb5-7"><a href="#cb5-7"></a></span>
+<span id="cb5-8"><a href="#cb5-8"></a>    @article{lter2016structural,</span>
+<span id="cb5-9"><a href="#cb5-9"></a>      title={Structural size measurements and isotopic signatures of foraging among adult male and female chinstrap penguins (Pygoscelis antarctica) nesting along the Palmer Archipelago near Palmer Station, 2007-2009},</span>
+<span id="cb5-10"><a href="#cb5-10"></a>      author={LTER, Palmer Station Antarctica and Gorman, Kristen},</span>
+<span id="cb5-11"><a href="#cb5-11"></a>      year={2016},</span>
+<span id="cb5-12"><a href="#cb5-12"></a>      publisher={Environmental Data Initiative}</span>
+<span id="cb5-13"><a href="#cb5-13"></a>    }</span>
+<span id="cb5-14"><a href="#cb5-14"></a></span>
+<span id="cb5-15"><a href="#cb5-15"></a>    @article{gorman2014ecological,</span>
+<span id="cb5-16"><a href="#cb5-16"></a>      title={Ecological sexual dimorphism and environmental variability within a community of Antarctic penguins (genus Pygoscelis)},</span>
+<span id="cb5-17"><a href="#cb5-17"></a>      author={Gorman, Kristen B and Williams, Tony D and Fraser, William R},</span>
+<span id="cb5-18"><a href="#cb5-18"></a>      journal={PloS one},</span>
+<span id="cb5-19"><a href="#cb5-19"></a>      volume={9},</span>
+<span id="cb5-20"><a href="#cb5-20"></a>      number={3},</span>
+<span id="cb5-21"><a href="#cb5-21"></a>      pages={e90081},</span>
+<span id="cb5-22"><a href="#cb5-22"></a>      year={2014},</span>
+<span id="cb5-23"><a href="#cb5-23"></a>      publisher={Public Library of Science San Francisco, USA}</span>
+<span id="cb5-24"><a href="#cb5-24"></a>    }</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><strong>Modelo de Referência (Norma técnica)</strong></li>
 </ul>
 <p>O segundo arquivo que precisamos, é um arquivo de modelo de referência. E aqui entra um ponto muito legal. Geralmente cada revista/periódico ou Universidade tem as suas normas de publicação, e lidar com isso é muitas vezes frustrante. No repositório <a href="https://www.zotero.org/styles">Zotero</a> podemos encontrar uma infinidade de estilos de formatação de referência, no momento em que escrevo esse tutorial são mais de 10 mil modelos disponíveis. No nosso caso usarei o modelo da ABNT como referência. Pra isso basta entrar no site da Zotero e buscar por ABNT que irão aparecer diversos resultados, escolha o que melhor encaixa nas normas da sua publicação e faça o download do arquivo <code>.csl</code>. Feito isso, precisamos agora apenas atualizar o nosso YAML com as informações de referência. No meu caso baixei o template ABNT utilizado pelo IPEA. E PRONTO! Acabou a nossa dor de cabeça com as referências! Agora vamos montar o nosso esqueleto em markdown e ver como de fato referenciar as obras no texto e ver o resultado!</p>
-<pre><code>---
-title: "Untitled"
-output: html_document
-bibliography: referencias.bib
-csl: abnt_ipea.csl
----
-</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1"></a>---</span>
+<span id="cb6-2"><a href="#cb6-2"></a>  title: "Untitled"</span>
+<span id="cb6-3"><a href="#cb6-3"></a>  output: html_document</span>
+<span id="cb6-4"><a href="#cb6-4"></a>  bibliography: referencias.bib</span>
+<span id="cb6-5"><a href="#cb6-5"></a>  csl: abnt_ipea.csl</span>
+<span id="cb6-6"><a href="#cb6-6"></a>---</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="template-markdown" class="level2">
 <h2 class="anchored" data-anchor-id="template-markdown">4. Template Markdown</h2>
 <section id="introdução" class="level3">
 <h3 class="anchored" data-anchor-id="introdução">1. Introdução</h3>
-<p>Vamos ver um exemplo de como fazer citações no markdown. Lembram do nosso arquivo de referências com as obras em BibTeX? Quando eu quero fazer uma citação, basta adicionar <code>[@identificador]</code> e o Markdown substitui pra gente a saída com a devida referência. Vamos testar? Vamos citar o primeiro artigo no nosso exemplo <code>[@gorman2014structural]</code> , essa seria a forma de citar, então <span class="citation" data-cites="gorman2014structural">(<a href="#ref-gorman2014structural" role="doc-biblioref">Gorman and LTER, 2014</a>)</span>. O identificador em cinza que vocês veem aqui é também um código markdown para exibir sem renderizar o cógido, qualquer objeto que nós envolvamos entre aspas simples, ele será renderizado literalmente como código, sem ser interpretado pelo motoro do <code>knitr</code> quando gerar o nosso arquivo final. Os arquivos em markdown deste tutorial vão ficar disponíveis no meu github pra que vocês possam usar e modificar a vontade.</p>
+<p>Vamos ver um exemplo de como fazer citações no markdown. Lembram do nosso arquivo de referências com as obras em BibTeX? Quando eu quero fazer uma citação, basta adicionar <code>[@identificador]</code> e o Markdown substitui pra gente a saída com a devida referência. Vamos testar? Vamos citar o primeiro artigo no nosso exemplo <code>[@gorman2014structural]</code> , essa seria a forma de citar, então <span class="citation" data-cites="gorman2014structural">(<a href="#ref-gorman2014structural" role="doc-biblioref">Gorman e LTER, 2014</a>)</span>. O identificador em cinza que vocês veem aqui é também um código markdown para exibir sem renderizar o cógido, qualquer objeto que nós envolvamos entre aspas simples, ele será renderizado literalmente como código, sem ser interpretado pelo motoro do <code>knitr</code> quando gerar o nosso arquivo final. Os arquivos em markdown deste tutorial vão ficar disponíveis no meu github pra que vocês possam usar e modificar a vontade.</p>
 </section>
 <section id="materiais-e-métodos" class="level3">
 <h3 class="anchored" data-anchor-id="materiais-e-métodos">2. Materiais e Métodos</h3>
@@ -962,7 +961,7 @@ csl: abnt_ipea.csl
 <h3 class="anchored" data-anchor-id="resultados-e-discussão">3. Resultados e Discussão</h3>
 <p>Primeiro vamos lembrar nossas variáveis:</p>
 <div class="cell" data-inlcude="true">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span> <span class="fu">names</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>penguins <span class="sc">%&gt;%</span> <span class="fu">names</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "species"           "island"            "bill_length_mm"   
 [4] "bill_depth_mm"     "flipper_length_mm" "body_mass_g"      
@@ -971,23 +970,23 @@ csl: abnt_ipea.csl
 </div>
 <p>Vamos agora montar uma tabela de dados descrivitos somente das informações do bico com as variáveis <code>bill_length</code>e <code>bill_depth</code> que são o comprimento e largura do bico, respectivamente.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(species) <span class="sc">%&gt;%</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(bill_length_mm,bill_depth_mm) <span class="sc">%&gt;%</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="at">.cols =</span> <span class="fu">everything</span>(), <span class="at">.fns =</span> <span class="fu">list</span>(<span class="at">Media =</span> mean, <span class="at">Desvio =</span> sd),</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">na.rm=</span><span class="cn">TRUE</span>,</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">.names =</span> <span class="st">"{col}_{fn}"</span>)) <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>penguins <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">group_by</span>(species) <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a>  <span class="fu">select</span>(bill_length_mm,bill_depth_mm) <span class="sc">%&gt;%</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="at">.cols =</span> <span class="fu">everything</span>(), <span class="at">.fns =</span> <span class="fu">list</span>(<span class="at">Media =</span> mean, <span class="at">Desvio =</span> sd),</span>
+<span id="cb9-5"><a href="#cb9-5"></a>                                   <span class="at">na.rm=</span><span class="cn">TRUE</span>,</span>
+<span id="cb9-6"><a href="#cb9-6"></a>                                   <span class="at">.names =</span> <span class="st">"{col}_{fn}"</span>)) <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Adding missing grouping variables: `species`</code></pre>
 </div>
 <div class="cell-output-display">
 
-<div id="qokswaogtr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="nxnplwmtmn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#qokswaogtr) .gt_table {
+:where(#nxnplwmtmn) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1012,7 +1011,7 @@ csl: abnt_ipea.csl
   border-left-color: #D3D3D3;
 }
 
-:where(#qokswaogtr) .gt_heading {
+:where(#nxnplwmtmn) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1024,7 +1023,12 @@ csl: abnt_ipea.csl
   border-right-color: #D3D3D3;
 }
 
-:where(#qokswaogtr) .gt_title {
+:where(#nxnplwmtmn) .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+:where(#nxnplwmtmn) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1036,7 +1040,7 @@ csl: abnt_ipea.csl
   border-bottom-width: 0;
 }
 
-:where(#qokswaogtr) .gt_subtitle {
+:where(#nxnplwmtmn) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1048,13 +1052,13 @@ csl: abnt_ipea.csl
   border-top-width: 0;
 }
 
-:where(#qokswaogtr) .gt_bottom_border {
+:where(#nxnplwmtmn) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#qokswaogtr) .gt_col_headings {
+:where(#nxnplwmtmn) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1069,7 +1073,7 @@ csl: abnt_ipea.csl
   border-right-color: #D3D3D3;
 }
 
-:where(#qokswaogtr) .gt_col_heading {
+:where(#nxnplwmtmn) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1089,7 +1093,7 @@ csl: abnt_ipea.csl
   overflow-x: hidden;
 }
 
-:where(#qokswaogtr) .gt_column_spanner_outer {
+:where(#nxnplwmtmn) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1101,15 +1105,15 @@ csl: abnt_ipea.csl
   padding-right: 4px;
 }
 
-:where(#qokswaogtr) .gt_column_spanner_outer:first-child {
+:where(#nxnplwmtmn) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#qokswaogtr) .gt_column_spanner_outer:last-child {
+:where(#nxnplwmtmn) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#qokswaogtr) .gt_column_spanner {
+:where(#nxnplwmtmn) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1121,7 +1125,7 @@ csl: abnt_ipea.csl
   width: 100%;
 }
 
-:where(#qokswaogtr) .gt_group_heading {
+:where(#nxnplwmtmn) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1144,9 +1148,10 @@ csl: abnt_ipea.csl
   border-right-width: 1px;
   border-right-color: #D3D3D3;
   vertical-align: middle;
+  text-align: left;
 }
 
-:where(#qokswaogtr) .gt_empty_group_heading {
+:where(#nxnplwmtmn) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1161,15 +1166,15 @@ csl: abnt_ipea.csl
   vertical-align: middle;
 }
 
-:where(#qokswaogtr) .gt_from_md > :first-child {
+:where(#nxnplwmtmn) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#qokswaogtr) .gt_from_md > :last-child {
+:where(#nxnplwmtmn) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#qokswaogtr) .gt_row {
+:where(#nxnplwmtmn) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1188,7 +1193,7 @@ csl: abnt_ipea.csl
   overflow-x: hidden;
 }
 
-:where(#qokswaogtr) .gt_stub {
+:where(#nxnplwmtmn) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1201,7 +1206,7 @@ csl: abnt_ipea.csl
   padding-right: 5px;
 }
 
-:where(#qokswaogtr) .gt_stub_row_group {
+:where(#nxnplwmtmn) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1215,11 +1220,11 @@ csl: abnt_ipea.csl
   vertical-align: top;
 }
 
-:where(#qokswaogtr) .gt_row_group_first td {
+:where(#nxnplwmtmn) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#qokswaogtr) .gt_summary_row {
+:where(#nxnplwmtmn) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1229,16 +1234,16 @@ csl: abnt_ipea.csl
   padding-right: 5px;
 }
 
-:where(#qokswaogtr) .gt_first_summary_row {
+:where(#nxnplwmtmn) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#qokswaogtr) .gt_first_summary_row.thick {
+:where(#nxnplwmtmn) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#qokswaogtr) .gt_last_summary_row {
+:where(#nxnplwmtmn) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1248,7 +1253,7 @@ csl: abnt_ipea.csl
   border-bottom-color: #D3D3D3;
 }
 
-:where(#qokswaogtr) .gt_grand_summary_row {
+:where(#nxnplwmtmn) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1258,7 +1263,7 @@ csl: abnt_ipea.csl
   padding-right: 5px;
 }
 
-:where(#qokswaogtr) .gt_first_grand_summary_row {
+:where(#nxnplwmtmn) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1268,11 +1273,11 @@ csl: abnt_ipea.csl
   border-top-color: #D3D3D3;
 }
 
-:where(#qokswaogtr) .gt_striped {
+:where(#nxnplwmtmn) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#qokswaogtr) .gt_table_body {
+:where(#nxnplwmtmn) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1281,7 +1286,7 @@ csl: abnt_ipea.csl
   border-bottom-color: #D3D3D3;
 }
 
-:where(#qokswaogtr) .gt_footnotes {
+:where(#nxnplwmtmn) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1295,7 +1300,7 @@ csl: abnt_ipea.csl
   border-right-color: #D3D3D3;
 }
 
-:where(#qokswaogtr) .gt_footnote {
+:where(#nxnplwmtmn) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1304,7 +1309,7 @@ csl: abnt_ipea.csl
   padding-right: 5px;
 }
 
-:where(#qokswaogtr) .gt_sourcenotes {
+:where(#nxnplwmtmn) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1318,7 +1323,7 @@ csl: abnt_ipea.csl
   border-right-color: #D3D3D3;
 }
 
-:where(#qokswaogtr) .gt_sourcenote {
+:where(#nxnplwmtmn) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1326,101 +1331,94 @@ csl: abnt_ipea.csl
   padding-right: 5px;
 }
 
-:where(#qokswaogtr) .gt_left {
+:where(#nxnplwmtmn) .gt_left {
   text-align: left;
 }
 
-:where(#qokswaogtr) .gt_center {
+:where(#nxnplwmtmn) .gt_center {
   text-align: center;
 }
 
-:where(#qokswaogtr) .gt_right {
+:where(#nxnplwmtmn) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#qokswaogtr) .gt_font_normal {
+:where(#nxnplwmtmn) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#qokswaogtr) .gt_font_bold {
+:where(#nxnplwmtmn) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#qokswaogtr) .gt_font_italic {
+:where(#nxnplwmtmn) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#qokswaogtr) .gt_super {
+:where(#nxnplwmtmn) .gt_super {
   font-size: 65%;
 }
 
-:where(#qokswaogtr) .gt_two_val_uncert {
-  display: inline-block;
-  line-height: 1em;
-  text-align: right;
-  font-size: 60%;
-  vertical-align: -0.25em;
-  margin-left: 0.1em;
-}
-
-:where(#qokswaogtr) .gt_footnote_marks {
+:where(#nxnplwmtmn) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#qokswaogtr) .gt_asterisk {
+:where(#nxnplwmtmn) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#qokswaogtr) .gt_slash_mark {
-  font-size: 0.7em;
-  line-height: 0.7em;
-  vertical-align: 0.15em;
+:where(#nxnplwmtmn) .gt_indent_1 {
+  text-indent: 5px;
 }
 
-:where(#qokswaogtr) .gt_fraction_numerator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: 0.45em;
+:where(#nxnplwmtmn) .gt_indent_2 {
+  text-indent: 10px;
 }
 
-:where(#qokswaogtr) .gt_fraction_denominator {
-  font-size: 0.6em;
-  line-height: 0.6em;
-  vertical-align: -0.05em;
+:where(#nxnplwmtmn) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#nxnplwmtmn) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#nxnplwmtmn) .gt_indent_5 {
+  text-indent: 25px;
 }
 </style>
 <table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">species</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">bill_length_mm_Media</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">bill_length_mm_Desvio</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">bill_depth_mm_Media</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">bill_depth_mm_Desvio</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="species">species</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bill_length_mm_Media">bill_length_mm_Media</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bill_length_mm_Desvio">bill_length_mm_Desvio</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bill_depth_mm_Media">bill_depth_mm_Media</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bill_depth_mm_Desvio">bill_depth_mm_Desvio</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
-    <tr><td class="gt_row gt_center">Adelie</td>
-<td class="gt_row gt_right">38.79139</td>
-<td class="gt_row gt_right">2.663405</td>
-<td class="gt_row gt_right">18.34636</td>
-<td class="gt_row gt_right">1.2166498</td></tr>
-    <tr><td class="gt_row gt_center">Chinstrap</td>
-<td class="gt_row gt_right">48.83382</td>
-<td class="gt_row gt_right">3.339256</td>
-<td class="gt_row gt_right">18.42059</td>
-<td class="gt_row gt_right">1.1353951</td></tr>
-    <tr><td class="gt_row gt_center">Gentoo</td>
-<td class="gt_row gt_right">47.50488</td>
-<td class="gt_row gt_right">3.081857</td>
-<td class="gt_row gt_right">14.98211</td>
-<td class="gt_row gt_right">0.9812198</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Adelie</td>
+<td headers="bill_length_mm_Media" class="gt_row gt_right">38.79139</td>
+<td headers="bill_length_mm_Desvio" class="gt_row gt_right">2.663405</td>
+<td headers="bill_depth_mm_Media" class="gt_row gt_right">18.34636</td>
+<td headers="bill_depth_mm_Desvio" class="gt_row gt_right">1.2166498</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Chinstrap</td>
+<td headers="bill_length_mm_Media" class="gt_row gt_right">48.83382</td>
+<td headers="bill_length_mm_Desvio" class="gt_row gt_right">3.339256</td>
+<td headers="bill_depth_mm_Media" class="gt_row gt_right">18.42059</td>
+<td headers="bill_depth_mm_Desvio" class="gt_row gt_right">1.1353951</td></tr>
+    <tr><td headers="species" class="gt_row gt_center">Gentoo</td>
+<td headers="bill_length_mm_Media" class="gt_row gt_right">47.50488</td>
+<td headers="bill_length_mm_Desvio" class="gt_row gt_right">3.081857</td>
+<td headers="bill_depth_mm_Media" class="gt_row gt_right">14.98211</td>
+<td headers="bill_depth_mm_Desvio" class="gt_row gt_right">0.9812198</td></tr>
   </tbody>
   
   
@@ -1430,12 +1428,12 @@ csl: abnt_ipea.csl
 </div>
 <p>E agora vamos montar um simples gráfico de dispersão entre as variáveis <code>bill_length</code>e <code>bill_depth</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>bill_length_mm, <span class="at">y=</span>bill_depth_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha=</span>.<span class="dv">5</span>, <span class="at">size =</span> <span class="fl">2.2</span>) <span class="sc">+</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> island)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>penguins <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>bill_length_mm, <span class="at">y=</span>bill_depth_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a>  <span class="fu">geom_point</span>(<span class="at">alpha=</span>.<span class="dv">5</span>, <span class="at">size =</span> <span class="fl">2.2</span>) <span class="sc">+</span></span>
+<span id="cb11-4"><a href="#cb11-4"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> island)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
+<pre><code>Warning: Removed 2 rows containing missing values (`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
 <p><img src="index_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="672"></p>
@@ -1443,7 +1441,7 @@ csl: abnt_ipea.csl
 </div>
 <p>Bacana não? Mas isso não poderia ser feito normalmente no fluxo de copia e cola? Claro que sim. Mas imagine receber de volta recomendações de revisão da sua análise, e ter que rodar novamente os dados e então sair copiando e colando gráficos, tabelas, tudo em um novo documento. Com o <code>rmakrdown</code> seu documento está no ponto, precisando alterar algum aspecto da análise isso pode ser feito facilmente nos trechos de código e também alterando a discussão respectiva a essas alterações, e no final gerar um documento atualizado com as revisões.</p>
 <p>Ah! E retornando as referências, já vimos como referenciar uma obra, agora vamos aprender como fazer uma citação direta do autor no texto. Simplesmente citamos o autor e ao passar a tag identificadora da referência, incluimos um sinal de <code>-</code> antes do <code>@</code>, dessa forma o markdown sabe que ele só precisa inserir o ano da citação e incluir o autor na lista de referências. Por exemplo, podemos ver no gráfico de dispersão com base nos dados obtidos por Gorman e colaboradores <span class="citation" data-cites="gorman2014ecological">(<a href="#ref-gorman2014ecological" role="doc-biblioref">2014</a>)</span> que somente os pinguins da espécie <em>P. adeliae</em> ocorrem nas três ilhas amostradas. Se você observar a sessão de referência mais abaixo vai encontrar a referência que acabamos de inserir no texto.</p>
-<p>Caso deseje citar multiplas obras em uma mesma citação, basta separar os <code>@</code> com <code>;</code> dentro dos <code>[@obra1 ; @obra2]</code> <span class="citation" data-cites="lter2016structural gorman2014structural">(<a href="#ref-gorman2014structural" role="doc-biblioref">Gorman and LTER, 2014</a>; <a href="#ref-lter2016structural" role="doc-biblioref">LTER and Gorman, 2016</a>)</span>.</p>
+<p>Caso deseje citar multiplas obras em uma mesma citação, basta separar os <code>@</code> com <code>;</code> dentro dos <code>[@obra1 ; @obra2]</code> <span class="citation" data-cites="lter2016structural gorman2014structural">(<a href="#ref-gorman2014structural" role="doc-biblioref">Gorman e LTER, 2014</a>; <a href="#ref-lter2016structural" role="doc-biblioref">LTER e Gorman, 2016</a>)</span>.</p>
 <p>Tudo pronto, a última coisa agora é simplesmente gerar o arquivo final no formato que você desejar. No R Studio, na parte superior do seu editor de código você verá um botão escrito <strong>Knit</strong> com um ícone de um novelo de lã e uma agulha de tricô. Esse botão aciona o pacote <code>knitr</code> que é o responsável por costurar digamos assim o nosso documento final. Na setinha para baixo que aparece ao lado do ícone podemos então escolher entre os três fomatos de saída suportados: HTML, PDF e Word.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -1460,8 +1458,7 @@ csl: abnt_ipea.csl
 <h3 class="anchored" data-anchor-id="conclusões">4. Conclusões</h3>
 <p>Resumindo, adotar a prática de gerar seus manuscritos utilizando <code>rmarkdown</code> pode contribuir bastante na organização, agilidade e reproducibilidade do seu processo de pesquisa. Um passo extra ainda é tornar este um processo compartilhado utilizando por exemplo um repositório no github no qual você e os demais colaboradores possam trabalhar em conjunto em um mesmo arquivo markdown com controle de versão. Se quiser saber mais sobre git e github <a href="https://youtu.be/lLhgKG0dkzY">aqui tem um vídeo</a> muito bacana do pessoal do R-Ladies São paulo com uma playlist muito boa sobre como configurar git e github com o R Studio.</p>
 <p>As referências por padrão serão colocadas sempre como o último item no arquivo gerado, porém se for do seu interesse que as referências aparecam antes de alguma seção, a de apêndice por exemplo, basta utilizar o código abaixo que as referências serão colocadas no local aonde você inserir este trecho de código HTML:</p>
-<pre><code>&lt;div id="refs"&gt;&lt;/div&gt;
-</code></pre>
+<pre><code>&lt;div id="refs"&gt;&lt;/div&gt;</code></pre>
 <p>Como vocês vão perceber, como este site aqui também foi desenvolvido ustilizando <code>rmarkdown</code>, as referências que utilizei de exemplo se encontram no rodapé da postagem. Bacana não?</p>
 </section>
 </section>
@@ -1473,26 +1470,27 @@ csl: abnt_ipea.csl
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
 <div id="ref-gorman2014ecological" class="csl-entry" role="doc-biblioentry">
-GORMAN, K. B.; WILLIAMS, T. D.; FRASER, W. R. Ecological sexual dimorphism and environmental variability within a community of antarctic penguins (genus pygoscelis). <strong>PloS one</strong>, v. 9, n. 3, p. e90081, 2014.
+GORMAN, K. B.; WILLIAMS, T. D.; FRASER, W. R. Ecological sexual dimorphism and environmental variability within a community of Antarctic penguins (genus Pygoscelis). <strong>PloS one</strong>, v. 9, n. 3, p. e90081, 2014.
 </div>
 <div id="ref-gorman2014structural" class="csl-entry" role="doc-biblioentry">
-GORMAN, K.; LTER, P. S. A. Structural size measurements and isotopic signatures of foraging among adult male and female gentoo penguins (pygoscelis papua) nesting along the palmer archipelago near palmer station, 2007-2009. 2014.
+GORMAN, K.; LTER, P. S. A. Structural size measurements and isotopic signatures of foraging among adult male and female gentoo penguins (Pygoscelis papua) nesting along the Palmer Archipelago near Palmer Station, 2007-2009. 2014.
 </div>
 <div id="ref-lter2016structural" class="csl-entry" role="doc-biblioentry">
-LTER, P. S. A.; GORMAN, K. Structural size measurements and isotopic signatures of foraging among adult male and female chinstrap penguins (pygoscelis antarctica) nesting along the palmer archipelago near palmer station, 2007-2009. 2016.
+LTER, P. S. A.; GORMAN, K. Structural size measurements and isotopic signatures of foraging among adult male and female chinstrap penguins (Pygoscelis antarctica) nesting along the Palmer Archipelago near Palmer Station, 2007-2009. 2016.
 </div>
-</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{barros2021,
+</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuso</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.pt_br">https://creativecommons.org/licenses/by/4.0/deed.pt_br</a></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citação</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{barros2022,
   author = {Paulo Barros},
-  title = {Gerando Manuscritos Acadêmicos Com Referências Utilizando {R}
-    Markdown},
-  date = {2021-07-15},
-  langid = {en}
+  title = {Gerando manuscritos acadêmicos com referências utilizando
+    Rmarkdown},
+  date = {2022-03-07},
+  url = {https://paulobarros.com.br/posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt},
+  langid = {pt-BR}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-barros2021" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
+</code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor, cite este trabalho como:</div><div id="ref-barros2022" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
 PAULO BARROS. <strong>Gerando manuscritos acadêmicos com referências
-utilizando R markdown</strong>.
+utilizando Rmarkdown</strong>. Disponível em: &lt;<a href="https://paulobarros.com.br/posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt">https://paulobarros.com.br/posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt</a>&gt;.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1534,12 +1532,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiada");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiada");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

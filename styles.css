@@ -32,29 +32,23 @@ a:hover {
 
 
 p code:not(.sourceCode), li code:not(.sourceCode){
-  color: #6e5429;
-  background-color: #e8e8e84f;
+  color: #2F2D2D;
+  background-color: #F4E5C2;
 }
 
 code {
-  color: #6e5429;
-  background-color: #e8e8e84f;
+  color: #2F2D2D;
+  background-color: #F4E5C2;
 }
 
 
-pre code {
-  background-color: #f6f6f64f;
-  padding: 5px 10px;
-  font-size: 14px;
-  
-}
 .sidebar nav[role=doc-toc] ul>li>a.active{
   border-left: 2px solid #593e0cff;
   color: #593e0cff !important;
 }
 
 .quarto-title-banner {
-    margin-bottom: 1em;
+    padding-bottom: 0;
     color: #595959;
     background: none;
 }
@@ -71,13 +65,16 @@ pre code {
 }
 
 .quarto-title .quarto-categories .quarto-category {
-    padding: 0.25em 0.75em;
+    padding: 0.15em 0.55em 0em 0.55em;
     font-size: .65em;
     text-transform: uppercase;
-    border: solid 1px;
-    border-radius: 0.25rem;
-    opacity: .9;
-    color: #3C3513;
+    font-weight: bold;
+    border: solid 1px #F4E5C2;
+    border-radius: 0.65rem;
+    opacity: 1;
+    color: #2F2D2D;
+    background-color: #F4E5C2;
+    margin: 2px ;
 }
 
 ol, ul, dl {
@@ -86,6 +83,8 @@ ol, ul, dl {
 
 .sourceCode{
   font-size: 14px;
+  background-color: none;
+
 }
 
 .column-margin.column-container p {
@@ -100,8 +99,28 @@ ol, ul, dl {
     font-size: 14px;
 }
 
-#title-block-header {
+#title-block-header{
   background-image: url('HeadCover.png');
-  padding-top: 100px;
+  padding-top: 10px;
   color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-color: #CCCCCC;
+}
+
+
+.quarto-title-banner p {
+  color: #FFFFFF;
+}
+
+div.quarto-post .listing-categories .listing-category {
+    padding: 0.15em 0.55em 0em 0.55em;
+    font-size: .65em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: solid 1px #F4E5C2;
+    border-radius: 0.65rem;
+    opacity: 1;
+    color: #2F2D2D;
+    background-color: #F4E5C2;
+    margin: 2px ;
 }
