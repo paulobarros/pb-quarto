@@ -7,7 +7,7 @@ website:
     creator: "@pbarrosjr"
   site-url: https://paulobarros.com.br
   navbar:
-      logo: LogoSiteNovo.png
+      logo: frogbird.png
       right:
       - text: About
         file: about.qmd

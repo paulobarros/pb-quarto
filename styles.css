@@ -1,23 +1,23 @@
 /* css styles */
 
 .navbar-title{
-  color: #353434;
-  font-size: 1em;
+  color: #303030;
+  font-size: 1.2em;
   line-height: 1em;
   padding-bottom: 0;
   font-weight: 300;
   font-family: "Major Mono Display";
-  text-shadow: 1px 1px #BABABA;
+  /*text-shadow: 1px 1px #BABABA;*/
 }
 
 .navbar-brand img{
-  max-height: 24px;
+  max-height: 48px;
   padding-bottom: 5px;
   
 }
 
 .navbar{
-  border-bottom: 2px solid #F0E9C2;
+  /*border-bottom: 3px solid #0a0909;*/
 }
 
 a {
@@ -124,3 +124,5 @@ div.quarto-post .listing-categories .listing-category {
     background-color: #F4E5C2;
     margin: 2px ;
 }
+
+
