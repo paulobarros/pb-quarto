@@ -1,6 +1,5 @@
 ---
-title: "Paulo Barros"
-image: pb.jpeg
+image: Avatar2023.png
 about:
   template: jolla
   links:
@@ -14,5 +13,11 @@ about:
       text: Instagram
       href: https://instagram.com/pbarrosjr
 ---
+
+
+
+# Paulo Barros {.about}
+
+
 
 I am a **Birdwatcher** who became a **Scientist**, **Data Science** enthusiast, I love **Ornithology** and **Herpetology**, graduate student of **Genetics, Biodiversity and Conservation**, Liz's partner, Otto's dad, sports fan (![](saints.png) #whodatnation), proud Northeastern Brazilian ![](bahia.png) and I can also make good pancakes!

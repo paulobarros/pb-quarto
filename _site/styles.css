@@ -125,4 +125,7 @@ div.quarto-post .listing-categories .listing-category {
     margin: 2px ;
 }
 
-
+.about h1{
+  font-family: "DM Serif Text", serif;
+  color: #2d2e30;
+}
