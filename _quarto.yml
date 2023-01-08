@@ -5,8 +5,8 @@ website:
   title: "PAULO BARROS"
   twitter-card:
     creator: "@pbarrosjr"
-    image: "Avatar2023.png"
-  site-url: https://paulobarros.com.br
+    image: "https://www.paulobarros.com.br/Avatar2023.png"
+  site-url: "https://paulobarros.com.br"
   navbar:
       logo: frogbird.png
       right:
