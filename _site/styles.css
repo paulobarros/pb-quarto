@@ -69,11 +69,11 @@ code {
     font-size: .65em;
     text-transform: uppercase;
     font-weight: bold;
-    border: solid 1px #F4E5C2;
+    border: solid 2px #414141;
     border-radius: 0.65rem;
     opacity: 1;
     color: #2F2D2D;
-    background-color: #F4E5C2;
+    background-color: #84da8f;
     margin: 2px ;
 }
 
@@ -117,11 +117,11 @@ div.quarto-post .listing-categories .listing-category {
     font-size: .65em;
     text-transform: uppercase;
     font-weight: bold;
-    border: solid 1px #F4E5C2;
+    border: solid 1px #dcdddc;
     border-radius: 0.65rem;
     opacity: 1;
     color: #2F2D2D;
-    background-color: #F4E5C2;
+    background-color: #84da8f;
     margin: 2px ;
 }
 

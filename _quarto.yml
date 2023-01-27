@@ -10,7 +10,7 @@ website:
   navbar:
       logo: frogbird.png
       right:
-      - text: About
+      - text: Bio
         file: about.qmd
       - text: Posts
         menu:
