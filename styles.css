@@ -33,12 +33,12 @@ a:hover {
 
 p code:not(.sourceCode), li code:not(.sourceCode){
   color: #2F2D2D;
-  background-color: #F4E5C2;
+  background-color: #a4f3ae;
 }
 
 code {
   color: #2F2D2D;
-  background-color: #F4E5C2;
+  background-color: #a4f3ae;
 }
 
 
@@ -69,11 +69,11 @@ code {
     font-size: .65em;
     text-transform: uppercase;
     font-weight: bold;
-    border: solid 2px #414141;
-    border-radius: 0.65rem;
+    border: solid 1px #a4f3ae;
+    border-radius: 0;
     opacity: 1;
-    color: #2F2D2D;
-    background-color: #84da8f;
+    color: #06360e;
+    background-color: #a4f3ae;
     margin: 2px ;
 }
 
@@ -100,10 +100,10 @@ ol, ul, dl {
 }
 
 #title-block-header{
-  background-image: url('HeadCover.png');
+  background-image: url('HeadCoverv2.png');
   padding-top: 10px;
   color: #FFFFFF;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-color: #CCCCCC;
 }
 
@@ -117,11 +117,11 @@ div.quarto-post .listing-categories .listing-category {
     font-size: .65em;
     text-transform: uppercase;
     font-weight: bold;
-    border: solid 1px #dcdddc;
-    border-radius: 0.65rem;
+    border: solid 1px #a4f3ae;
+    border-radius: 0;
     opacity: 1;
-    color: #2F2D2D;
-    background-color: #84da8f;
+    color: #06360e;
+    background-color: #a4f3ae;
     margin: 2px ;
 }
 
