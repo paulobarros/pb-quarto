@@ -16,6 +16,7 @@ $theme: "litera" !default;
 @import 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 
 
@@ -26,7 +27,9 @@ $font-family-code: "JetBrains Mono", sans-serif, !default;
 
 /*-- scss:rules --*/
 
-$link-color: rgba(0, 0, 120, 0.3) !default;
+/* $link-color: rgba(0, 0, 120, 0.3) !default; */
+
+
 
 
 

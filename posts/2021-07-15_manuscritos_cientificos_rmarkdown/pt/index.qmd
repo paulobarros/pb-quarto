@@ -29,7 +29,7 @@ Na grande maioria das vezes o fluxo de trabalho de um projeto de pesquisa é um 
 
 Pensando nisto, o fluxo normal de realizar as análises em algum software estatístico, e ter a necessidade de redigir o manuscrito em um outro software de edição de texto torna o fluxo de trabalho nada prático e extremamente trabalhoso. Uma mínima revisão requer alterações em diversas partes do documento que deverão ser alteradas manualmente, tornando o processo de revisão ainda mais desgastante. E se houvesse uma maneira de combinar os dois processos de maneira que o seu fluxo de trabalho se tornasse uma rotina fácil e automatizada para revisão e produção dos seus manuscritos? Esta é a ideia ao utilizarmos todo o poder do `rmarkdown` na produção dos mais diversos tipos de documentos.
 
-#### O que é o `rmarkdown` ?
+#### O que é o rmarkdown ?
 
 O `rmarkdown` é um pacote desenvolvido buscando facilitar a reproducibilidade, uma vez que código e texto podem ser incorporados em um mesmo documento, gerando formatos diferentes de arquivo (html, PDF, Word) a partir de uma mesma fonte. Não é o foco deste tutorial discutir o básico do `rmarkdown` mas é possível compreender como a marcação funciona na produção dos documentos quando partirmos para o exemplo prático.
 
@@ -50,7 +50,7 @@ Para saber mais sobre o pacote vale a pena consultar o livro [**R Markdown: the 
 -   Gerenciar referências bibliográficas em um arquivo markdown
 -   Como exportar o arquivo final em um formato de sua preferência
 
-## 2. Seu primeiro arquivo em `rmarkdown`
+## 2. Seu primeiro arquivo em rmarkdown   
 
 Se você ainda não possui o pacote instalado basta fazer a instalação pela menu *Tools \> Install packages* do RStudio, ou utilizando o comando `install.packages("rmarkdown")`, entretanto é muito provável que você já possua o pacote instalado se utiliza o RStudio.
 

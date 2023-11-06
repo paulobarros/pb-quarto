@@ -2,16 +2,16 @@
 
 .navbar-title{
   color: #303030;
-  font-size: 1.2em;
+  font-size: 1.6em;
   line-height: 1em;
   padding-bottom: 0;
   font-weight: 300;
-  font-family: "Major Mono Display";
+  font-family: "VT323";
   /*text-shadow: 1px 1px #BABABA;*/
 }
 
 .navbar-brand img{
-  max-height: 48px;
+  max-height: 80px;
   padding-bottom: 5px;
   
 }
@@ -20,13 +20,14 @@
   /*border-bottom: 3px solid #0a0909;*/
 }
 
-a {
-  color: #6f5d3bff;
+.content a {
+  color: #219341;
   /*text-decoration: none;*/
 }
 
-a:hover {
-  color: #593e0cff;
+a.nav-link:hover {
+  color: #a4f3ae;
+  background-color: #080808;
 }
 
 
@@ -54,9 +55,15 @@ code {
 }
 
 #title-block-header.quarto-title-block.default .quarto-title .title {
-  font-family: "DM Serif Text";
-  font-style: italic;
+  /*font-family: "DM Serif Text";*/
+  font-family: "VT323";
+  /*font-style: italic;*/
   color: #FFFFFF;
+  /*background: #11002bff url('term_top.png') no-repeat;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px #a4f3ae dotted;
+  font-weight: 400;
   
 }
 
@@ -100,13 +107,35 @@ ol, ul, dl {
 }
 
 #title-block-header{
-  background-image: url('HeadCoverv2.png');
-  padding-top: 10px;
-  color: #FFFFFF;
-  background-repeat: repeat-x;
-  background-color: #CCCCCC;
+  background-color: #1c1f24ff;
+  padding: 0;
+  margin-top: -30px;
 }
 
+.page-columns .column-body {
+  background: #11002bff url('term_top.png') no-repeat;
+  padding: 20px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.quarto-title-meta {
+  background: #11002bff;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  color: #a4f3ae;
+  padding: 0 20px 10px 20px;
+  font-family: "VT323";
+}
+
+.quarto-title-meta p {
+  color: #a4f3ae;
+  font-family: "VT323";  
+}
+
+#title-block-header > div.quarto-title-banner.page-columns.page-full {
+  margin-bottom: 0;
+}
 
 .quarto-title-banner p {
   color: #FFFFFF;
@@ -128,4 +157,82 @@ div.quarto-post .listing-categories .listing-category {
 .about h1{
   font-family: "DM Serif Text", serif;
   color: #2d2e30;
+}
+
+div.quarto-post .body h3.listing-title, div.quarto-post .body .listing-title.h3 {
+  font-family: "VT323";
+  font-size: 1.2em;
+  background-color: #080808;
+  color: #68F290;
+  padding: 3px 4px;
+}
+  
+
+.navbar-dark .navbar-nav .nav-item a.nav-link {
+  color: #080808;
+  font-family: "VT323";
+  font-size: 1.4em;
+}
+
+.navbar-dark .navbar-nav .nav-item  a.nav-link:hover {
+  
+  color: #68F290;
+}
+
+.navbar .dropdown-item {
+  color: #080808;
+  font-family: "VT323";
+  font-size: 1.4em;
+}
+  
+.navbar ul li a.dropdown-item:hover{
+  background-color: #080808;
+  color: #68F290;
+}
+
+.quarto-content h1,h2,h3,h4,h5,h6 {
+  font-family: "VT323";
+  font-weight: 400;
+  background-color: #080808;
+  color: #68F290;
+  padding: 2px 5px;
+}
+
+h2#toc-title {
+  font-family: "VT323";
+  font-weight: 400;
+  background-color: #FFF;
+  color: #080808;
+  font-size: 1.2em;
+  padding: 0;
+}
+
+div.quarto-post .body h3.listing-title, div.quarto-post .body .listing-title.h3{
+  font-family: "VT323";
+  font-weight: 400;
+  background-color: #FFF;
+  color: #080808;
+  font-size: 1.2em;
+}
+
+#quarto-margin-sidebar .quarto-listing-category-title {
+  font-family: "VT323";
+  font-weight: 400;
+  background-color: #FFF;
+  color: #080808;
+  font-size: 1.2em;
+  padding: 0;
+  
+}
+
+#quarto-content.page-columns #quarto-margin-sidebar, #quarto-content.page-columns #quarto-sidebar {
+  font-family: "VT323";
+  font-weight: 400;
+  background-color: #FFF;
+  color: #2B2A2A;
+  font-size: 1.2em;
+}
+
+.list .quarto-listing-default .body a h3:hover{
+  background-color: #FFF;
 }
