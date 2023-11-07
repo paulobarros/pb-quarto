@@ -1,6 +1,4 @@
 ---
-title: "\"All men by nature desire knowledge\""
-subtitle: "- Aristotle"
 listing:
   - id: blog-en
     contents: posts/*/en/*.qmd

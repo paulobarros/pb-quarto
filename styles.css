@@ -2,17 +2,17 @@
 
 .navbar-title{
   color: #303030;
-  font-size: 1.6em;
+  font-size: 1.2em;
   line-height: 1em;
   padding-bottom: 0;
-  font-weight: 300;
+  font-weight: 400;
   font-family: "VT323";
   /*text-shadow: 1px 1px #BABABA;*/
 }
 
 .navbar-brand img{
-  max-height: 80px;
-  padding-bottom: 5px;
+  max-height: 60px;
+  padding-bottom: 0px;
   
 }
 
@@ -225,14 +225,32 @@ div.quarto-post .body h3.listing-title, div.quarto-post .body .listing-title.h3{
   
 }
 
-#quarto-content.page-columns #quarto-margin-sidebar, #quarto-content.page-columns #quarto-sidebar {
-  font-family: "VT323";
+#quarto-content.page-columns #quarto-margin-sidebar, #quarto-content.page-columns #quarto-sidebar a{
+  /*font-family: "VT323";*/
+  font-family: Barlow Condensed Medium;
   font-weight: 400;
   background-color: #FFF;
   color: #2B2A2A;
   font-size: 1.2em;
 }
 
+div.category:hover {
+  background-color: #080808;
+  color: #68F290;
+}
+
 .list .quarto-listing-default .body a h3:hover{
   background-color: #FFF;
 }
+
+/* PAGES TOC & SIDEBAR */
+
+.sidebar nav[role=doc-toc] ul>li>a.active {
+  color: #18C33F !important;
+  font-size: 1em;
+}
+
+.sidebar .quarto-alternate-notebooks ul li a, .sidebar .quarto-alternate-formats ul li a, .sidebar nav[role=doc-toc]>ul li a:hover {
+  color: #68F290 !important;
+}
+

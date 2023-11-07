@@ -2,13 +2,13 @@ project:
   type: website
 
 website:
-  title: "PAULO BARROS"
+  title: "Paulo Barros"
   twitter-card:
     creator: "@pbarrosjr"
     image: "https://www.paulobarros.com.br/Avatar2023.png"
   site-url: "https://paulobarros.com.br"
   navbar:
-      logo: pb_new_logo.png
+      logo: pb_new_logo_color.png
       right:
       - text: Bio
         file: about.qmd

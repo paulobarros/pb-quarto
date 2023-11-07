@@ -1,6 +1,4 @@
 ---
-title: "\"Todos nós por natureza desejamos conhecimento.\""
-subtitle: "- Aristóteles"
 lang: pt-BR
 listing:
   - id: blog-pt
