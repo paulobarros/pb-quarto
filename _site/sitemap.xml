@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://paulobarros.com.br/index.html</loc>
-    <lastmod>2023-11-07T12:35:15.954Z</lastmod>
-  </url>
-  <url>
-    <loc>https://paulobarros.com.br/index-us.html</loc>
-    <lastmod>2023-11-07T12:35:16.354Z</lastmod>
-  </url>
-  <url>
-    <loc>https://paulobarros.com.br/posts/en.html</loc>
-    <lastmod>2023-11-07T12:35:16.906Z</lastmod>
+    <loc>https://paulobarros.com.br/about.html</loc>
+    <lastmod>2024-02-22T19:56:38.767Z</lastmod>
   </url>
   <url>
     <loc>https://paulobarros.com.br/posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt/index.html</loc>
-    <lastmod>2023-11-07T12:35:19.170Z</lastmod>
+    <lastmod>2024-02-22T19:57:11.507Z</lastmod>
+  </url>
+  <url>
+    <loc>https://paulobarros.com.br/index-us.html</loc>
+    <lastmod>2024-02-22T19:56:35.743Z</lastmod>
+  </url>
+  <url>
+    <loc>https://paulobarros.com.br/index.html</loc>
+    <lastmod>2024-02-22T19:58:40.219Z</lastmod>
+  </url>
+  <url>
+    <loc>https://paulobarros.com.br/posts/en.html</loc>
+    <lastmod>2024-02-22T19:56:36.255Z</lastmod>
   </url>
   <url>
     <loc>https://paulobarros.com.br/posts/pt.html</loc>
-    <lastmod>2023-11-07T12:35:19.938Z</lastmod>
-  </url>
-  <url>
-    <loc>https://paulobarros.com.br/about.html</loc>
-    <lastmod>2023-11-07T12:35:20.378Z</lastmod>
+    <lastmod>2024-02-22T19:57:09.219Z</lastmod>
   </url>
 </urlset>

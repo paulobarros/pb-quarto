@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Paulo Barros">
 
-<title>Paulo Barros - Gerando manuscritos acadêmicos com referências utilizando Rmarkdown</title>
+<title>PAULO BARROS - Gerando manuscritos acadêmicos com referências utilizando Rmarkdown</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,6 +93,8 @@ div.csl-indent {
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,13 +111,14 @@ div.csl-indent {
     "search-more-matches-text": "mais correspondências neste documento",
     "search-clear-button-title": "Limpar",
     "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar"
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 
 
 <link rel="stylesheet" href="../../../styles.css">
-<meta name="twitter:title" content="Paulo Barros - Gerando manuscritos acadêmicos com referências utilizando Rmarkdown">
+<meta name="twitter:title" content="PAULO BARROS - Gerando manuscritos acadêmicos com referências utilizando Rmarkdown">
 <meta name="twitter:description" content="Gerenciar referências não precisa ser uma dor de cabeça!">
 <meta name="twitter:image" content="https://www.paulobarros.com.br/Avatar2023.png">
 <meta name="twitter:creator" content="@pbarrosjr">
@@ -130,10 +133,10 @@ div.csl-indent {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../pb_new_logo_color.png" alt="" class="navbar-logo">
+    <img src="../../../MM.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../../../index.html">
-    <span class="navbar-title">Paulo Barros</span>
+    <span class="navbar-title">PAULO BARROS</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Procurar"></div>
@@ -271,7 +274,7 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<p>Para saber mais sobre o pacote vale a pena consultar o livro <a href="https://bookdown.org/yihui/rmarkdown/"><strong>R Markdown: the definitive guide</strong></a> disponível gratuitamente online. Uma outra fonte muito bacana é uma <a href="https://raw.githubusercontent.com/rstudio/cheatsheets/master/rmarkdown-2.0.pdf"><em>colinha (cheat sheet)</em></a> com um resumo de todas os códigos utilizados na marcação dos documentos bem como as principais opções para geração dos arquivos.</p>
+<p>Para saber mais sobre o pacote vale a pena consultar o livro <a href="https://bookdown.org/yihui/rmarkdown/"><i class="fa-solid fa-link fa-sm" aria-label="link"></i> <strong>R Markdown: the definitive guide</strong></a> disponível gratuitamente online. Uma outra fonte muito bacana é uma <a href="https://raw.githubusercontent.com/rstudio/cheatsheets/master/rmarkdown-2.0.pdf"><i class="fa-solid fa-link fa-sm" aria-label="link"></i> <em>colinha (cheat sheet)</em></a> com um resumo de todas os códigos utilizados na marcação dos documentos bem como as principais opções para geração dos arquivos.</p>
 </section>
 <section id="o-que-vamos-aprender-nesse-tutorial" class="level4">
 <h4 class="anchored" data-anchor-id="o-que-vamos-aprender-nesse-tutorial">O que vamos aprender nesse tutorial?</h4>
@@ -355,7 +358,7 @@ div.csl-indent {
 </div>
 <section id="sobre-os-dados" class="level4">
 <h4 class="anchored" data-anchor-id="sobre-os-dados">Sobre os dados</h4>
-<p>Os dados foram coletados pela <a href="https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php">Drª Kirsten Gorman</a> na Estação Palmer na Antartica. O projeto faz parte da Rede de Pesquisas Ecológicas de Longa Duração (LTER - <em>Long Term Research Network</em>). O data set apresenta informações de três espécies de pinguins do gênero <em>Pygoscelis</em> que ocorrem no arquipélago de Palmer, esses bonitinhos ai da ilustração, conhecidos comumente como Adélie (<em>Pygoscelis adeliae</em>), Gentoo (<em>Pygoscelis papua</em>) e Chinstrap (<em>Pygoscelis antarticus</em>). São basicamente medidas biométricas de bico e nadadeira, peso corporal, informação de sexo e o ano em que foram amostrados os animais.</p>
+<p>Os dados foram coletados pela <a href="https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php"><i class="fa-solid fa-link fa-sm" aria-label="link"></i> Drª Kirsten Gorman</a> na Estação Palmer na Antartica. O projeto faz parte da Rede de Pesquisas Ecológicas de Longa Duração (LTER - <em>Long Term Research Network</em>). O data set apresenta informações de três espécies de pinguins do gênero <em>Pygoscelis</em> que ocorrem no arquipélago de Palmer, esses bonitinhos ai da ilustração, conhecidos comumente como Adélie (<em>Pygoscelis adeliae</em>), Gentoo (<em>Pygoscelis papua</em>) e Chinstrap (<em>Pygoscelis antarticus</em>). São basicamente medidas biométricas de bico e nadadeira, peso corporal, informação de sexo e o ano em que foram amostrados os animais.</p>
 <p>No exemplo vou utilizar outro pacote muito bacana para manipulação de dados, o <code>tidyverse</code>, se você ainda não tem recomendo instalar, novamente só rodar <code>install.packages("tidyverse")</code>. Este pacote é uma coleção de outros pacotes utilitários que facilitam demais a vida na hora de manipular os mais diversos tipos de conjuntos de dados, não é meu objetivo falar dele aqui, isso é tema de um outro tutorial, prometo. Vamos dar uma olhada nos dados?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(tidyverse, <span class="at">quietly =</span> <span class="cn">TRUE</span>)</span>
@@ -369,23 +372,23 @@ div.csl-indent {
 <span id="cb3-9"><a href="#cb3-9"></a>  <span class="fu">gt</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="upttklbhyz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#upttklbhyz table {
+<div id="stxitmypap" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#stxitmypap table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#upttklbhyz thead, #upttklbhyz tbody, #upttklbhyz tfoot, #upttklbhyz tr, #upttklbhyz td, #upttklbhyz th {
+#stxitmypap thead, #stxitmypap tbody, #stxitmypap tfoot, #stxitmypap tr, #stxitmypap td, #stxitmypap th {
   border-style: none;
 }
 
-#upttklbhyz p {
+#stxitmypap p {
   margin: 0;
   padding: 0;
 }
 
-#upttklbhyz .gt_table {
+#stxitmypap .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -411,12 +414,12 @@ div.csl-indent {
   border-left-color: #D3D3D3;
 }
 
-#upttklbhyz .gt_caption {
+#stxitmypap .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#upttklbhyz .gt_title {
+#stxitmypap .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -428,7 +431,7 @@ div.csl-indent {
   border-bottom-width: 0;
 }
 
-#upttklbhyz .gt_subtitle {
+#stxitmypap .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -440,7 +443,7 @@ div.csl-indent {
   border-top-width: 0;
 }
 
-#upttklbhyz .gt_heading {
+#stxitmypap .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -452,13 +455,13 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-#upttklbhyz .gt_bottom_border {
+#stxitmypap .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#upttklbhyz .gt_col_headings {
+#stxitmypap .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -473,7 +476,7 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-#upttklbhyz .gt_col_heading {
+#stxitmypap .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -493,7 +496,7 @@ div.csl-indent {
   overflow-x: hidden;
 }
 
-#upttklbhyz .gt_column_spanner_outer {
+#stxitmypap .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -505,15 +508,15 @@ div.csl-indent {
   padding-right: 4px;
 }
 
-#upttklbhyz .gt_column_spanner_outer:first-child {
+#stxitmypap .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#upttklbhyz .gt_column_spanner_outer:last-child {
+#stxitmypap .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#upttklbhyz .gt_column_spanner {
+#stxitmypap .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -525,11 +528,11 @@ div.csl-indent {
   width: 100%;
 }
 
-#upttklbhyz .gt_spanner_row {
+#stxitmypap .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#upttklbhyz .gt_group_heading {
+#stxitmypap .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -555,7 +558,7 @@ div.csl-indent {
   text-align: left;
 }
 
-#upttklbhyz .gt_empty_group_heading {
+#stxitmypap .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -570,15 +573,15 @@ div.csl-indent {
   vertical-align: middle;
 }
 
-#upttklbhyz .gt_from_md > :first-child {
+#stxitmypap .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#upttklbhyz .gt_from_md > :last-child {
+#stxitmypap .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#upttklbhyz .gt_row {
+#stxitmypap .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -597,7 +600,7 @@ div.csl-indent {
   overflow-x: hidden;
 }
 
-#upttklbhyz .gt_stub {
+#stxitmypap .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -610,7 +613,7 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#upttklbhyz .gt_stub_row_group {
+#stxitmypap .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -624,15 +627,15 @@ div.csl-indent {
   vertical-align: top;
 }
 
-#upttklbhyz .gt_row_group_first td {
+#stxitmypap .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#upttklbhyz .gt_row_group_first th {
+#stxitmypap .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#upttklbhyz .gt_summary_row {
+#stxitmypap .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -642,16 +645,16 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#upttklbhyz .gt_first_summary_row {
+#stxitmypap .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#upttklbhyz .gt_first_summary_row.thick {
+#stxitmypap .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#upttklbhyz .gt_last_summary_row {
+#stxitmypap .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -661,7 +664,7 @@ div.csl-indent {
   border-bottom-color: #D3D3D3;
 }
 
-#upttklbhyz .gt_grand_summary_row {
+#stxitmypap .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -671,7 +674,7 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#upttklbhyz .gt_first_grand_summary_row {
+#stxitmypap .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -681,7 +684,7 @@ div.csl-indent {
   border-top-color: #D3D3D3;
 }
 
-#upttklbhyz .gt_last_grand_summary_row_top {
+#stxitmypap .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -691,11 +694,11 @@ div.csl-indent {
   border-bottom-color: #D3D3D3;
 }
 
-#upttklbhyz .gt_striped {
+#stxitmypap .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#upttklbhyz .gt_table_body {
+#stxitmypap .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -704,7 +707,7 @@ div.csl-indent {
   border-bottom-color: #D3D3D3;
 }
 
-#upttklbhyz .gt_footnotes {
+#stxitmypap .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -718,7 +721,7 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-#upttklbhyz .gt_footnote {
+#stxitmypap .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -727,7 +730,7 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#upttklbhyz .gt_sourcenotes {
+#stxitmypap .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -741,7 +744,7 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-#upttklbhyz .gt_sourcenote {
+#stxitmypap .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -749,63 +752,63 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#upttklbhyz .gt_left {
+#stxitmypap .gt_left {
   text-align: left;
 }
 
-#upttklbhyz .gt_center {
+#stxitmypap .gt_center {
   text-align: center;
 }
 
-#upttklbhyz .gt_right {
+#stxitmypap .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#upttklbhyz .gt_font_normal {
+#stxitmypap .gt_font_normal {
   font-weight: normal;
 }
 
-#upttklbhyz .gt_font_bold {
+#stxitmypap .gt_font_bold {
   font-weight: bold;
 }
 
-#upttklbhyz .gt_font_italic {
+#stxitmypap .gt_font_italic {
   font-style: italic;
 }
 
-#upttklbhyz .gt_super {
+#stxitmypap .gt_super {
   font-size: 65%;
 }
 
-#upttklbhyz .gt_footnote_marks {
+#stxitmypap .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#upttklbhyz .gt_asterisk {
+#stxitmypap .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#upttklbhyz .gt_indent_1 {
+#stxitmypap .gt_indent_1 {
   text-indent: 5px;
 }
 
-#upttklbhyz .gt_indent_2 {
+#stxitmypap .gt_indent_2 {
   text-indent: 10px;
 }
 
-#upttklbhyz .gt_indent_3 {
+#stxitmypap .gt_indent_3 {
   text-indent: 15px;
 }
 
-#upttklbhyz .gt_indent_4 {
+#stxitmypap .gt_indent_4 {
   text-indent: 20px;
 }
 
-#upttklbhyz .gt_indent_5 {
+#stxitmypap .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -904,7 +907,7 @@ div.csl-indent {
 <li>Um identificador único: neste caso <code>gorman2014structural</code> é o identificador que usaremos no nosso markdown para referenciar esta obra.</li>
 <li>E as informações de publicação: titulo, autores, ano e a editora.</li>
 </ul>
-<p>Muito simples não? Mas se existem outros formatos, BibTex é o melhor? Não sei. Pelas minhas pesquisas, o formato padrão e mais utilizado é o JSON, entretanto, a vantagem de utilizar o BibTex é que podemos conseguir a informação de cada obra facilmente neste formato utilizando o <a href="https://scholar.google.com/schhp?hl=pt-BR&amp;as_sdt=0,5">Google Acadêmico</a>! Basta acessar a plataforma e buscar pelo título da obra que você deseja a referência. Nos resultados que aparecerão, você verá a imagem de <strong>duas aspas</strong> ao rodapé do resultado, clicando neste ícone você tem acesso a como referenciar esta obra em diversas opções de normas, ABNT inclusive, embora seja apresentada como NBR. Nesta nova janela que abrir, no rodapé estará o link para acesso ao BibTeX desta obra, só clicar e ser feliz!</p>
+<p>Muito simples não? Mas se existem outros formatos, BibTex é o melhor? Não sei. Pelas minhas pesquisas, o formato padrão e mais utilizado é o JSON, entretanto, a vantagem de utilizar o BibTex é que podemos conseguir a informação de cada obra facilmente neste formato utilizando o <a href="https://scholar.google.com/schhp?hl=pt-BR&amp;as_sdt=0,5"><i class="fa-solid fa-link fa-sm" aria-label="link"></i> Google Acadêmico</a>! Basta acessar a plataforma e buscar pelo título da obra que você deseja a referência. Nos resultados que aparecerão, você verá a imagem de <strong>duas aspas</strong> ao rodapé do resultado, clicando neste ícone você tem acesso a como referenciar esta obra em diversas opções de normas, ABNT inclusive, embora seja apresentada como NBR. Nesta nova janela que abrir, no rodapé estará o link para acesso ao BibTeX desta obra, só clicar e ser feliz!</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -942,7 +945,7 @@ div.csl-indent {
 <ul>
 <li><strong>Modelo de Referência (Norma técnica)</strong></li>
 </ul>
-<p>O segundo arquivo que precisamos, é um arquivo de modelo de referência. E aqui entra um ponto muito legal. Geralmente cada revista/periódico ou Universidade tem as suas normas de publicação, e lidar com isso é muitas vezes frustrante. No repositório <a href="https://www.zotero.org/styles">Zotero</a> podemos encontrar uma infinidade de estilos de formatação de referência, no momento em que escrevo esse tutorial são mais de 10 mil modelos disponíveis. No nosso caso usarei o modelo da ABNT como referência. Pra isso basta entrar no site da Zotero e buscar por ABNT que irão aparecer diversos resultados, escolha o que melhor encaixa nas normas da sua publicação e faça o download do arquivo <code>.csl</code>. Feito isso, precisamos agora apenas atualizar o nosso YAML com as informações de referência. No meu caso baixei o template ABNT utilizado pelo IPEA. E PRONTO! Acabou a nossa dor de cabeça com as referências! Agora vamos montar o nosso esqueleto em markdown e ver como de fato referenciar as obras no texto e ver o resultado!</p>
+<p>O segundo arquivo que precisamos, é um arquivo de modelo de referência. E aqui entra um ponto muito legal. Geralmente cada revista/periódico ou Universidade tem as suas normas de publicação, e lidar com isso é muitas vezes frustrante. No repositório <a href="https://www.zotero.org/styles"><i class="fa-solid fa-link fa-sm" aria-label="link"></i> Zotero</a> podemos encontrar uma infinidade de estilos de formatação de referência, no momento em que escrevo esse tutorial são mais de 10 mil modelos disponíveis. No nosso caso usarei o modelo da ABNT como referência. Pra isso basta entrar no site da Zotero e buscar por ABNT que irão aparecer diversos resultados, escolha o que melhor encaixa nas normas da sua publicação e faça o download do arquivo <code>.csl</code>. Feito isso, precisamos agora apenas atualizar o nosso YAML com as informações de referência. No meu caso baixei o template ABNT utilizado pelo IPEA. E PRONTO! Acabou a nossa dor de cabeça com as referências! Agora vamos montar o nosso esqueleto em markdown e ver como de fato referenciar as obras no texto e ver o resultado!</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode numberSource default number-lines code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1"></a>---</span>
 <span id="cb6-2"><a href="#cb6-2"></a>  title: "Untitled"</span>
 <span id="cb6-3"><a href="#cb6-3"></a>  output: html_document</span>
@@ -998,23 +1001,23 @@ Supply arguments directly to `.fns` through an anonymous function instead.
 </div>
 <div class="cell-output-display">
 
-<div id="tvkdcbnare" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#tvkdcbnare table {
+<div id="gahcwgaprl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gahcwgaprl table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#tvkdcbnare thead, #tvkdcbnare tbody, #tvkdcbnare tfoot, #tvkdcbnare tr, #tvkdcbnare td, #tvkdcbnare th {
+#gahcwgaprl thead, #gahcwgaprl tbody, #gahcwgaprl tfoot, #gahcwgaprl tr, #gahcwgaprl td, #gahcwgaprl th {
   border-style: none;
 }
 
-#tvkdcbnare p {
+#gahcwgaprl p {
   margin: 0;
   padding: 0;
 }
 
-#tvkdcbnare .gt_table {
+#gahcwgaprl .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1040,12 +1043,12 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   border-left-color: #D3D3D3;
 }
 
-#tvkdcbnare .gt_caption {
+#gahcwgaprl .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#tvkdcbnare .gt_title {
+#gahcwgaprl .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1057,7 +1060,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   border-bottom-width: 0;
 }
 
-#tvkdcbnare .gt_subtitle {
+#gahcwgaprl .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1069,7 +1072,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   border-top-width: 0;
 }
 
-#tvkdcbnare .gt_heading {
+#gahcwgaprl .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1081,13 +1084,13 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   border-right-color: #D3D3D3;
 }
 
-#tvkdcbnare .gt_bottom_border {
+#gahcwgaprl .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#tvkdcbnare .gt_col_headings {
+#gahcwgaprl .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1102,7 +1105,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   border-right-color: #D3D3D3;
 }
 
-#tvkdcbnare .gt_col_heading {
+#gahcwgaprl .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1122,7 +1125,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   overflow-x: hidden;
 }
 
-#tvkdcbnare .gt_column_spanner_outer {
+#gahcwgaprl .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1134,15 +1137,15 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   padding-right: 4px;
 }
 
-#tvkdcbnare .gt_column_spanner_outer:first-child {
+#gahcwgaprl .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#tvkdcbnare .gt_column_spanner_outer:last-child {
+#gahcwgaprl .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#tvkdcbnare .gt_column_spanner {
+#gahcwgaprl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1154,11 +1157,11 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   width: 100%;
 }
 
-#tvkdcbnare .gt_spanner_row {
+#gahcwgaprl .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#tvkdcbnare .gt_group_heading {
+#gahcwgaprl .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1184,7 +1187,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   text-align: left;
 }
 
-#tvkdcbnare .gt_empty_group_heading {
+#gahcwgaprl .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1199,15 +1202,15 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   vertical-align: middle;
 }
 
-#tvkdcbnare .gt_from_md > :first-child {
+#gahcwgaprl .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#tvkdcbnare .gt_from_md > :last-child {
+#gahcwgaprl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#tvkdcbnare .gt_row {
+#gahcwgaprl .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1226,7 +1229,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   overflow-x: hidden;
 }
 
-#tvkdcbnare .gt_stub {
+#gahcwgaprl .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1239,7 +1242,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   padding-right: 5px;
 }
 
-#tvkdcbnare .gt_stub_row_group {
+#gahcwgaprl .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1253,15 +1256,15 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   vertical-align: top;
 }
 
-#tvkdcbnare .gt_row_group_first td {
+#gahcwgaprl .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#tvkdcbnare .gt_row_group_first th {
+#gahcwgaprl .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#tvkdcbnare .gt_summary_row {
+#gahcwgaprl .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1271,16 +1274,16 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   padding-right: 5px;
 }
 
-#tvkdcbnare .gt_first_summary_row {
+#gahcwgaprl .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#tvkdcbnare .gt_first_summary_row.thick {
+#gahcwgaprl .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#tvkdcbnare .gt_last_summary_row {
+#gahcwgaprl .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1290,7 +1293,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   border-bottom-color: #D3D3D3;
 }
 
-#tvkdcbnare .gt_grand_summary_row {
+#gahcwgaprl .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1300,7 +1303,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   padding-right: 5px;
 }
 
-#tvkdcbnare .gt_first_grand_summary_row {
+#gahcwgaprl .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1310,7 +1313,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   border-top-color: #D3D3D3;
 }
 
-#tvkdcbnare .gt_last_grand_summary_row_top {
+#gahcwgaprl .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1320,11 +1323,11 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   border-bottom-color: #D3D3D3;
 }
 
-#tvkdcbnare .gt_striped {
+#gahcwgaprl .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#tvkdcbnare .gt_table_body {
+#gahcwgaprl .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1333,7 +1336,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   border-bottom-color: #D3D3D3;
 }
 
-#tvkdcbnare .gt_footnotes {
+#gahcwgaprl .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1347,7 +1350,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   border-right-color: #D3D3D3;
 }
 
-#tvkdcbnare .gt_footnote {
+#gahcwgaprl .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1356,7 +1359,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   padding-right: 5px;
 }
 
-#tvkdcbnare .gt_sourcenotes {
+#gahcwgaprl .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1370,7 +1373,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   border-right-color: #D3D3D3;
 }
 
-#tvkdcbnare .gt_sourcenote {
+#gahcwgaprl .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1378,63 +1381,63 @@ Supply arguments directly to `.fns` through an anonymous function instead.
   padding-right: 5px;
 }
 
-#tvkdcbnare .gt_left {
+#gahcwgaprl .gt_left {
   text-align: left;
 }
 
-#tvkdcbnare .gt_center {
+#gahcwgaprl .gt_center {
   text-align: center;
 }
 
-#tvkdcbnare .gt_right {
+#gahcwgaprl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#tvkdcbnare .gt_font_normal {
+#gahcwgaprl .gt_font_normal {
   font-weight: normal;
 }
 
-#tvkdcbnare .gt_font_bold {
+#gahcwgaprl .gt_font_bold {
   font-weight: bold;
 }
 
-#tvkdcbnare .gt_font_italic {
+#gahcwgaprl .gt_font_italic {
   font-style: italic;
 }
 
-#tvkdcbnare .gt_super {
+#gahcwgaprl .gt_super {
   font-size: 65%;
 }
 
-#tvkdcbnare .gt_footnote_marks {
+#gahcwgaprl .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#tvkdcbnare .gt_asterisk {
+#gahcwgaprl .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#tvkdcbnare .gt_indent_1 {
+#gahcwgaprl .gt_indent_1 {
   text-indent: 5px;
 }
 
-#tvkdcbnare .gt_indent_2 {
+#gahcwgaprl .gt_indent_2 {
   text-indent: 10px;
 }
 
-#tvkdcbnare .gt_indent_3 {
+#gahcwgaprl .gt_indent_3 {
   text-indent: 15px;
 }
 
-#tvkdcbnare .gt_indent_4 {
+#gahcwgaprl .gt_indent_4 {
   text-indent: 20px;
 }
 
-#tvkdcbnare .gt_indent_5 {
+#gahcwgaprl .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1502,7 +1505,7 @@ Supply arguments directly to `.fns` through an anonymous function instead.
 </section>
 <section id="conclusões" class="level3">
 <h3 class="anchored" data-anchor-id="conclusões">4. Conclusões</h3>
-<p>Resumindo, adotar a prática de gerar seus manuscritos utilizando <code>rmarkdown</code> pode contribuir bastante na organização, agilidade e reproducibilidade do seu processo de pesquisa. Um passo extra ainda é tornar este um processo compartilhado utilizando por exemplo um repositório no github no qual você e os demais colaboradores possam trabalhar em conjunto em um mesmo arquivo markdown com controle de versão. Se quiser saber mais sobre git e github <a href="https://youtu.be/lLhgKG0dkzY">aqui tem um vídeo</a> muito bacana do pessoal do R-Ladies São paulo com uma playlist muito boa sobre como configurar git e github com o R Studio.</p>
+<p>Resumindo, adotar a prática de gerar seus manuscritos utilizando <code>rmarkdown</code> pode contribuir bastante na organização, agilidade e reproducibilidade do seu processo de pesquisa. Um passo extra ainda é tornar este um processo compartilhado utilizando por exemplo um repositório no github no qual você e os demais colaboradores possam trabalhar em conjunto em um mesmo arquivo markdown com controle de versão. Se quiser saber mais sobre git e github <a href="https://youtu.be/lLhgKG0dkzY"><i class="fa-solid fa-link fa-sm" aria-label="link"></i> aqui tem um vídeo</a> muito bacana do pessoal do R-Ladies São paulo com uma playlist muito boa sobre como configurar git e github com o R Studio.</p>
 <p>As referências por padrão serão colocadas sempre como o último item no arquivo gerado, porém se for do seu interesse que as referências aparecam antes de alguma seção, a de apêndice por exemplo, basta utilizar o código abaixo que as referências serão colocadas no local aonde você inserir este trecho de código HTML:</p>
 <pre><code>&lt;div id="refs"&gt;&lt;/div&gt;</code></pre>
 <p>Como vocês vão perceber, como este site aqui também foi desenvolvido ustilizando <code>rmarkdown</code>, as referências que utilizei de exemplo se encontram no rodapé da postagem. Bacana não?</p>

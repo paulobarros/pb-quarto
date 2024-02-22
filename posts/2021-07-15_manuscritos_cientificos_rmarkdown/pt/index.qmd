@@ -41,7 +41,7 @@ O `rmarkdown` é um pacote desenvolvido buscando facilitar a reproducibilidade, 
 knitr::include_graphics("img/rmd.png") 
 ```
 
-Para saber mais sobre o pacote vale a pena consultar o livro [**R Markdown: the definitive guide**](https://bookdown.org/yihui/rmarkdown/) disponível gratuitamente online. Uma outra fonte muito bacana é uma [*colinha (cheat sheet)*](https://raw.githubusercontent.com/rstudio/cheatsheets/master/rmarkdown-2.0.pdf) com um resumo de todas os códigos utilizados na marcação dos documentos bem como as principais opções para geração dos arquivos.
+Para saber mais sobre o pacote vale a pena consultar o livro [{{< fa link size=sm >}} **R Markdown: the definitive guide**](https://bookdown.org/yihui/rmarkdown/) disponível gratuitamente online. Uma outra fonte muito bacana é uma [{{< fa link size=sm >}} *colinha (cheat sheet)*](https://raw.githubusercontent.com/rstudio/cheatsheets/master/rmarkdown-2.0.pdf) com um resumo de todas os códigos utilizados na marcação dos documentos bem como as principais opções para geração dos arquivos.
 
 #### O que vamos aprender nesse tutorial?
 
@@ -129,7 +129,7 @@ knitr::include_graphics("img/penguins.png")
 
 #### Sobre os dados
 
-Os dados foram coletados pela [Drª Kirsten Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php) na Estação Palmer na Antartica. O projeto faz parte da Rede de Pesquisas Ecológicas de Longa Duração (LTER - *Long Term Research Network*). O data set apresenta informações de três espécies de pinguins do gênero *Pygoscelis* que ocorrem no arquipélago de Palmer, esses bonitinhos ai da ilustração, conhecidos comumente como Adélie (*Pygoscelis adeliae*), Gentoo (*Pygoscelis papua*) e Chinstrap (*Pygoscelis antarticus*). São basicamente medidas biométricas de bico e nadadeira, peso corporal, informação de sexo e o ano em que foram amostrados os animais.
+Os dados foram coletados pela [{{< fa link size=sm >}} Drª Kirsten Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php) na Estação Palmer na Antartica. O projeto faz parte da Rede de Pesquisas Ecológicas de Longa Duração (LTER - *Long Term Research Network*). O data set apresenta informações de três espécies de pinguins do gênero *Pygoscelis* que ocorrem no arquipélago de Palmer, esses bonitinhos ai da ilustração, conhecidos comumente como Adélie (*Pygoscelis adeliae*), Gentoo (*Pygoscelis papua*) e Chinstrap (*Pygoscelis antarticus*). São basicamente medidas biométricas de bico e nadadeira, peso corporal, informação de sexo e o ano em que foram amostrados os animais.
 
 No exemplo vou utilizar outro pacote muito bacana para manipulação de dados, o `tidyverse`, se você ainda não tem recomendo instalar, novamente só rodar `install.packages("tidyverse")`. Este pacote é uma coleção de outros pacotes utilitários que facilitam demais a vida na hora de manipular os mais diversos tipos de conjuntos de dados, não é meu objetivo falar dele aqui, isso é tema de um outro tutorial, prometo. Vamos dar uma olhada nos dados?
 
@@ -178,7 +178,7 @@ Como vocês podem ver, nada demais. Apenas um arquivo de texto estruturado com t
 -   Um identificador único: neste caso `gorman2014structural` é o identificador que usaremos no nosso markdown para referenciar esta obra.
 -   E as informações de publicação: titulo, autores, ano e a editora.
 
-Muito simples não? Mas se existem outros formatos, BibTex é o melhor? Não sei. Pelas minhas pesquisas, o formato padrão e mais utilizado é o JSON, entretanto, a vantagem de utilizar o BibTex é que podemos conseguir a informação de cada obra facilmente neste formato utilizando o [Google Acadêmico](https://scholar.google.com/schhp?hl=pt-BR&as_sdt=0,5)! Basta acessar a plataforma e buscar pelo título da obra que você deseja a referência. Nos resultados que aparecerão, você verá a imagem de **duas aspas** ao rodapé do resultado, clicando neste ícone você tem acesso a como referenciar esta obra em diversas opções de normas, ABNT inclusive, embora seja apresentada como NBR. Nesta nova janela que abrir, no rodapé estará o link para acesso ao BibTeX desta obra, só clicar e ser feliz!
+Muito simples não? Mas se existem outros formatos, BibTex é o melhor? Não sei. Pelas minhas pesquisas, o formato padrão e mais utilizado é o JSON, entretanto, a vantagem de utilizar o BibTex é que podemos conseguir a informação de cada obra facilmente neste formato utilizando o [{{< fa link size=sm >}} Google Acadêmico](https://scholar.google.com/schhp?hl=pt-BR&as_sdt=0,5)! Basta acessar a plataforma e buscar pelo título da obra que você deseja a referência. Nos resultados que aparecerão, você verá a imagem de **duas aspas** ao rodapé do resultado, clicando neste ícone você tem acesso a como referenciar esta obra em diversas opções de normas, ABNT inclusive, embora seja apresentada como NBR. Nesta nova janela que abrir, no rodapé estará o link para acesso ao BibTeX desta obra, só clicar e ser feliz!
 
 ```{r}
 #| echo: false
@@ -221,7 +221,7 @@ A partir de então é só buscar o código BibTeX de todas as obras que serão c
 
 -   **Modelo de Referência (Norma técnica)**
 
-O segundo arquivo que precisamos, é um arquivo de modelo de referência. E aqui entra um ponto muito legal. Geralmente cada revista/periódico ou Universidade tem as suas normas de publicação, e lidar com isso é muitas vezes frustrante. No repositório [Zotero](https://www.zotero.org/styles) podemos encontrar uma infinidade de estilos de formatação de referência, no momento em que escrevo esse tutorial são mais de 10 mil modelos disponíveis. No nosso caso usarei o modelo da ABNT como referência. Pra isso basta entrar no site da Zotero e buscar por ABNT que irão aparecer diversos resultados, escolha o que melhor encaixa nas normas da sua publicação e faça o download do arquivo `.csl`. Feito isso, precisamos agora apenas atualizar o nosso YAML com as informações de referência. No meu caso baixei o template ABNT utilizado pelo IPEA. E PRONTO! Acabou a nossa dor de cabeça com as referências! Agora vamos montar o nosso esqueleto em markdown e ver como de fato referenciar as obras no texto e ver o resultado!
+O segundo arquivo que precisamos, é um arquivo de modelo de referência. E aqui entra um ponto muito legal. Geralmente cada revista/periódico ou Universidade tem as suas normas de publicação, e lidar com isso é muitas vezes frustrante. No repositório [{{< fa link size=sm >}} Zotero](https://www.zotero.org/styles) podemos encontrar uma infinidade de estilos de formatação de referência, no momento em que escrevo esse tutorial são mais de 10 mil modelos disponíveis. No nosso caso usarei o modelo da ABNT como referência. Pra isso basta entrar no site da Zotero e buscar por ABNT que irão aparecer diversos resultados, escolha o que melhor encaixa nas normas da sua publicação e faça o download do arquivo `.csl`. Feito isso, precisamos agora apenas atualizar o nosso YAML com as informações de referência. No meu caso baixei o template ABNT utilizado pelo IPEA. E PRONTO! Acabou a nossa dor de cabeça com as referências! Agora vamos montar o nosso esqueleto em markdown e ver como de fato referenciar as obras no texto e ver o resultado!
 
 ```default
 ---
@@ -296,7 +296,7 @@ A escolha do formato de saída depende pura e simplesmente da sua necessidade, e
 
 ### 4. Conclusões
 
-Resumindo, adotar a prática de gerar seus manuscritos utilizando `rmarkdown` pode contribuir bastante na organização, agilidade e reproducibilidade do seu processo de pesquisa. Um passo extra ainda é tornar este um processo compartilhado utilizando por exemplo um repositório no github no qual você e os demais colaboradores possam trabalhar em conjunto em um mesmo arquivo markdown com controle de versão. Se quiser saber mais sobre git e github [aqui tem um vídeo](https://youtu.be/lLhgKG0dkzY) muito bacana do pessoal do R-Ladies São paulo com uma playlist muito boa sobre como configurar git e github com o R Studio.
+Resumindo, adotar a prática de gerar seus manuscritos utilizando `rmarkdown` pode contribuir bastante na organização, agilidade e reproducibilidade do seu processo de pesquisa. Um passo extra ainda é tornar este um processo compartilhado utilizando por exemplo um repositório no github no qual você e os demais colaboradores possam trabalhar em conjunto em um mesmo arquivo markdown com controle de versão. Se quiser saber mais sobre git e github [{{< fa link size=sm >}} aqui tem um vídeo](https://youtu.be/lLhgKG0dkzY) muito bacana do pessoal do R-Ladies São paulo com uma playlist muito boa sobre como configurar git e github com o R Studio.
 
 As referências por padrão serão colocadas sempre como o último item no arquivo gerado, porém se for do seu interesse que as referências aparecam antes de alguma seção, a de apêndice por exemplo, basta utilizar o código abaixo que as referências serão colocadas no local aonde você inserir este trecho de código HTML:
 
