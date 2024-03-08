@@ -18,6 +18,8 @@ website:
             file: index-us.qmd
           - text: Portuguese (BR)
             file: index.qmd
+      - text: Serviços
+        file: services.qmd
       - icon: github
         href: https://github.com/
       - icon: twitter

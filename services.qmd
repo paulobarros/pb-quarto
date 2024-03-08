@@ -1,0 +1,88 @@
+---
+title: "Serviços Acadêmicos"
+title-block-style: default
+page-layout: full
+---
+
+::: {.grid}
+
+:::{.g-col-12}
+:::
+
+:::{.g-col-12}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis dapibus ante, ac finibus odio lacinia id. Etiam faucibus, turpis in auctor malesuada, sapien sapien tristique erat, vitae dignissim risus lectus aliquam ipsum. Nam erat magna, eleifend vestibulum odio ac, faucibus suscipit ex. Nulla egestas dapibus fringilla. Nam lobortis orci in elit dapibus eleifend. Morbi congue ex nec lobortis egestas. Praesent odio turpis, condimentum quis vestibulum vitae, maximus eget libero. Nulla quis ipsum nec ex venenatis malesuada. Cras pulvinar enim quis dui feugiat suscipit quis nec neque. Etiam non ante sed odio pulvinar pulvinar. Suspendisse eu nisi mollis, tincidunt odio sagittis, gravida elit. Integer id est feugiat, luctus ipsum vel, commodo ipsum. Vestibulum nibh ligula, commodo vel leo id, condimentum ornare massa. Nunc eget malesuada libero. Cras pretium ullamcorper ipsum. Curabitur pellentesque velit ligula, vel facilisis lacus luctus tempus.
+:::
+
+:::{.g-col-5 .herocon}
+:::{.grid .centergrid}
+:::{.g-col-12 }
+### {{< fa laptop-code >}} Consultoria Estatística
+:::
+:::
+:::
+
+
+:::{.g-col-2}
+:::
+
+:::{.g-col-5  .herocon}
+:::{.grid .centergrid}
+:::{.g-col-12  }
+### {{< fa pen-nib >}} Redação Científica
+:::
+:::
+:::
+
+:::{.g-col-7 .servs}
+{{< fa play >}} Análise de dados <br>
+{{< fa play >}} Visualização de dados para publicações <br>
+{{< fa play >}} Curadoria e Processamento de dados 
+:::
+
+:::{.g-col-5 .servs}
+{{< fa play >}} Revisão de relatórios e projetos <br>
+{{< fa play >}} Tradução de Artigos <br>
+{{< fa play >}} Consultoria em Projetos para processos seletivos
+:::
+
+:::{.g-col-5 .herocon}
+:::{.grid .centergrid}
+:::{.g-col-12 }
+### {{< fa map-location-dot >}} Análises Espaciais (GIS)
+:::
+:::
+:::
+
+
+:::{.g-col-2}
+:::
+
+:::{.g-col-5  .herocon}
+:::{.grid .centergrid}
+:::{.g-col-12  }
+### {{< fa chalkboard-user >}} Educação
+:::
+:::
+:::
+
+:::{.g-col-7 .servs}
+{{< fa play >}} Criação de Mapas Georeferenciados <br>
+{{< fa play >}} Curadoria e Processamento de dados espaciais <br>
+{{< fa play >}} Análise de dados Geoespaciais 
+:::
+
+:::{.g-col-5 .servs}
+{{< fa play >}} Cursos em Ciência de Dados e GIS <br>
+{{< fa play >}} Ferramentas Digitais na produção acadêmica <br>
+{{< fa play >}} Palestras de Divulgação Científica
+:::
+
+
+:::{.g-col-4 .btncall}
+
+[<button type="button" class="btn btn-dark d-flex align-items-center">{{< fa brands whatsapp size=2x >}}&nbsp;&nbsp;&nbsp;Solicite um orçamento!</button>](https://wa.link/kk455x){target="_blank"}
+:::
+
+
+:::
+

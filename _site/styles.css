@@ -16,9 +16,6 @@
   
 }
 
-.navbar{
-  /*border-bottom: 3px solid #0a0909;*/
-}
 
 .content p a {
   color: #333333;
@@ -28,12 +25,7 @@
   font-family: "Barlow Condensed";
   font-weight: 500;
 }
-/*
-a.nav-link:hover {
-  color: #a4f3ae;
-  background-color: #080808;
-}
-*/
+
 
 
 
@@ -78,16 +70,19 @@ code {
 }
 
 .quarto-title .quarto-categories .quarto-category {
-    padding: 0.15em 0.55em 0em 0.55em;
+    padding: 0.15em 0.55em 0em 1.5em;
     font-size: .65em;
     text-transform: uppercase;
     font-weight: bold;
-    border: solid 1px #d4bd8e;
+    border: 0;
     border-radius: 0;
     opacity: 1;
-    color: #333333;
-    background-color: #d4bd8e;
+    color: #d4bd8e;
+    /*background-color: #d4bd8e;*/
     margin: 2px ;
+    margin: 2px 2px 2px 2px;
+    background: url(https://paulobarros.github.io/assets/tag_Lgray.png) no-repeat left;
+    background-size: 16px;
 }
 
 ol, ul, dl {
@@ -149,16 +144,17 @@ ol, ul, dl {
 }
 
 div.quarto-post .listing-categories .listing-category {
-    padding: 0.15em 0.55em 0em 0.55em;
-    font-size: .65em;
+    padding: 0.15em 0.95em 0em 1.3em;
+    font-size: .75em;
     text-transform: uppercase;
     font-weight: bold;
-    border: solid 1px #cccccc;
+    border: 0;
     border-radius: 0;
     opacity: 1;
     color: #666666;
-    background-color: #cccccc;
-    margin: 2px ;
+    margin: 2px 2px 2px 2px;
+    background: url(https://paulobarros.github.io/assets/tag_gray.png) no-repeat left;
+    background-size: 16px;
 }
 
 .about h1{
@@ -170,11 +166,20 @@ div.quarto-post .body h3.listing-title, div.quarto-post .body .listing-title.h3 
   font-family: "Barlow Condensed";
   font-size: 1.2em;
   background-color: #080808;
-  /*color: #68F290;*/
   color: #ab8a41;
-  padding: 3px 4px;
+  padding: 0;
 }
-  
+
+.content .thumbnail p a {
+  padding: 0;
+  background-color: #FFF;
+}
+
+.content .thumbnail p a img{
+  /*border-radius: 3%;*/
+  mask: url(https://paulobarros.github.io/assets/honeycomb_new.svg) no-repeat center;
+  mask-size: 350px 220px;
+}
 
 .navbar-dark .navbar-nav .nav-item a.nav-link {
   color: #080808;
@@ -268,12 +273,58 @@ div.category:hover {
 
 /* PAGES TOC & SIDEBAR */
 
+/*
 .sidebar nav[role=doc-toc] ul>li>a.active {
   color: #ab8a41; !important;
   font-size: 1em;
+}*/
+
+.sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid #ab8a41;
+    color: #ab8a41 !important;
 }
 
-.sidebar .quarto-alternate-notebooks ul li a, .sidebar .quarto-alternate-formats ul li a, .sidebar nav[role=doc-toc]>ul li a:hover {
-  color: #ab8a41; !important;
+
+
+/* SERVICE PAGES ICONS */
+
+.herocon {
+  background: #333333;
+  padding-left: 10px;
+  
 }
 
+.centergrid {
+  justify-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.herocon i.fa-solid {
+  color: #d4bd8e;
+  padding: 5px;
+}
+
+.herocon h3 {
+  font-size: 2em;
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+}
+
+.servs p {
+  margin: 5px 0px 5px 20px ;
+  line-height: 2em;
+}
+
+.btn-dark {
+  font-size: 1em;
+}
+
+.content .btncall p a{
+  background-color: #FFF;
+}
+
+.btn-dark:hover{
+  color: #d4bd8e;
+}
