@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PAULO BARROS",
+    "section": "",
+    "text": "Gerando manuscritos acadêmicos com referências utilizando Rmarkdown\n\n\nGerenciar referências não precisa ser uma dor de cabeça!\n\n\n\n\nRmarkdown\n\n\nABNT\n\n\n \n\n\n\n\n15 de jul. de 2021\n\n\nPaulo Barros\n\n\n16 minutos\n\n\n\n\n\n\nNenhum item correspondente"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Senta que lá vem história …",
@@ -7,11 +14,11 @@
     "text": "Github\n  \n  \n    \n     Twitter\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCiência de Dados, Genética Quantitativa, Genômica, Análises Ecológicas."
   },
   {
-    "objectID": "posts/pt.html",
-    "href": "posts/pt.html",
-    "title": "Paulo Barros",
+    "objectID": "about.html#paulo-barros-eledele",
+    "href": "about.html#paulo-barros-eledele",
+    "title": "Senta que lá vem história …",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nGerando manuscritos acadêmicos com referências utilizando Rmarkdown\n\n\nGerenciar referências não precisa ser uma dor de cabeça!\n\n\n\n\nRmarkdown\n\n\nABNT\n\n\n \n\n\n\n\nJul 15, 2021\n\n\nPaulo Barros\n\n\n16 min\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\nReusehttps://creativecommons.org/licenses/by/4.0/CitationBibTeX citation:@online{untitled,\n  author = {},\n  title = {Paulo {Barros}},\n  url = {https://paulobarros.com.br/posts/pt.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\n“Paulo Barros.” n.d. https://paulobarros.com.br/posts/pt.html."
+    "text": "Ciência de Dados, Genética Quantitativa, Genômica, Análises Ecológicas."
   },
   {
     "objectID": "posts/en.html",
@@ -21,18 +28,11 @@
     "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items\n\n\n\n\n\n\nReusehttps://creativecommons.org/licenses/by/4.0/CitationBibTeX citation:@online{untitled,\n  author = {},\n  title = {Paulo {Barros}},\n  url = {https://paulobarros.com.br/posts/en.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\n“Paulo Barros.” n.d. https://paulobarros.com.br/posts/en.html."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "PAULO BARROS",
+    "objectID": "posts/pt.html",
+    "href": "posts/pt.html",
+    "title": "Paulo Barros",
     "section": "",
-    "text": "Gerando manuscritos acadêmicos com referências utilizando Rmarkdown\n\n\nGerenciar referências não precisa ser uma dor de cabeça!\n\n\n\n\nRmarkdown\n\n\nABNT\n\n\n \n\n\n\n\n15 de jul. de 2021\n\n\nPaulo Barros\n\n\n16 minutos\n\n\n\n\n\n\nNenhum item correspondente"
-  },
-  {
-    "objectID": "index-us.html",
-    "href": "index-us.html",
-    "title": "PAULO BARROS",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nGerando manuscritos acadêmicos com referências utilizando Rmarkdown\n\n\nGerenciar referências não precisa ser uma dor de cabeça!\n\n\n\n\nRmarkdown\n\n\nABNT\n\n\n \n\n\n\n\nJul 15, 2021\n\n\nPaulo Barros\n\n\n16 min\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\nReusehttps://creativecommons.org/licenses/by/4.0/CitationBibTeX citation:@online{untitled,\n  author = {},\n  title = {Paulo {Barros}},\n  url = {https://paulobarros.com.br/posts/pt.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\n“Paulo Barros.” n.d. https://paulobarros.com.br/posts/pt.html."
   },
   {
     "objectID": "posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt/index.html",
@@ -84,24 +84,17 @@
     "text": "5. Considerações finais\nE então? Chega de sofrer com organização de bibliografia e copiar e colar tabelas de resultados e gráficos. Espero que o tutorial tenha sido útil, qualquer dúvida ou comentário vocês me encontram pelas redes sociais. E por favor se acharem este conteúdo útil compartilhem com os colegas, conhecimento se constrói em comunidade!"
   },
   {
+    "objectID": "index-us.html",
+    "href": "index-us.html",
+    "title": "PAULO BARROS",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "services.html",
     "href": "services.html",
     "title": "Serviços Acadêmicos",
     "section": "",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis dapibus ante, ac finibus odio lacinia id. Etiam faucibus, turpis in auctor malesuada, sapien sapien tristique erat, vitae dignissim risus lectus aliquam ipsum. Nam erat magna, eleifend vestibulum odio ac, faucibus suscipit ex. Nulla egestas dapibus fringilla. Nam lobortis orci in elit dapibus eleifend. Morbi congue ex nec lobortis egestas. Praesent odio turpis, condimentum quis vestibulum vitae, maximus eget libero. Nulla quis ipsum nec ex venenatis malesuada. Cras pulvinar enim quis dui feugiat suscipit quis nec neque. Etiam non ante sed odio pulvinar pulvinar. Suspendisse eu nisi mollis, tincidunt odio sagittis, gravida elit. Integer id est feugiat, luctus ipsum vel, commodo ipsum. Vestibulum nibh ligula, commodo vel leo id, condimentum ornare massa. Nunc eget malesuada libero. Cras pretium ullamcorper ipsum. Curabitur pellentesque velit ligula, vel facilisis lacus luctus tempus.\n\n\n\n\n Consultoria Estatística\n\n\n\n\n\n\n\n\n\n Redação Científica\n\n\n\n\n Análise de dados   Visualização de dados para publicações   Curadoria e Processamento de dados\n\n\n Revisão de relatórios e projetos   Tradução de Artigos   Consultoria em Projetos para processos seletivos\n\n\n\n\n Análises Espaciais (GIS)\n\n\n\n\n\n\n\n\n\n Educação\n\n\n\n\n Criação de Mapas Georeferenciados   Curadoria e Processamento de dados espaciais   Análise de dados Geoespaciais\n\n\n Cursos em Ciência de Dados e GIS   Ferramentas Digitais na produção acadêmica   Palestras de Divulgação Científica\n\n\n   Solicite um orçamento!"
-  },
-  {
-    "objectID": "about.html#paulo-barros",
-    "href": "about.html#paulo-barros",
-    "title": "Senta que lá vem história …",
-    "section": "",
-    "text": "Ciência de Dados, Genética Quantitativa, Genômica, Análises Ecológicas."
-  },
-  {
-    "objectID": "about.html#paulo-barros-eledele",
-    "href": "about.html#paulo-barros-eledele",
-    "title": "Senta que lá vem história …",
-    "section": "",
-    "text": "Ciência de Dados, Genética Quantitativa, Genômica, Análises Ecológicas."
   }
 ]

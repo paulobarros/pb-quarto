@@ -6,10 +6,10 @@ page-layout: full
 
 ::: {.grid}
 
-:::{.g-col-12}
+:::{.g-col-12 .g-col-md-6}
 :::
 
-:::{.g-col-12}
+:::{.g-col-12 }
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis dapibus ante, ac finibus odio lacinia id. Etiam faucibus, turpis in auctor malesuada, sapien sapien tristique erat, vitae dignissim risus lectus aliquam ipsum. Nam erat magna, eleifend vestibulum odio ac, faucibus suscipit ex. Nulla egestas dapibus fringilla. Nam lobortis orci in elit dapibus eleifend. Morbi congue ex nec lobortis egestas. Praesent odio turpis, condimentum quis vestibulum vitae, maximus eget libero. Nulla quis ipsum nec ex venenatis malesuada. Cras pulvinar enim quis dui feugiat suscipit quis nec neque. Etiam non ante sed odio pulvinar pulvinar. Suspendisse eu nisi mollis, tincidunt odio sagittis, gravida elit. Integer id est feugiat, luctus ipsum vel, commodo ipsum. Vestibulum nibh ligula, commodo vel leo id, condimentum ornare massa. Nunc eget malesuada libero. Cras pretium ullamcorper ipsum. Curabitur pellentesque velit ligula, vel facilisis lacus luctus tempus.
 :::
 
