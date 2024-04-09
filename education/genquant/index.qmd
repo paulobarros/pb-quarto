@@ -1,0 +1,91 @@
+---
+title: "Ensino"
+title-meta: "Genética Quantitativa"
+title-block-style: none
+title-block-banner: false
+page-layout: full
+toc: false
+---
+
+
+![](images/genquant.png){width=400 fig-align="center"}
+
+
+## Instrutores
+
+:::{.grid}
+
+
+:::{.g-col-8}
+
+* Dr. Paulo Luiz Souza Carneiro (**Docente responsável**)<br>
+  Departamento de Ciências Biológicas (DCB)<br>
+  plscarneiro@uesb.edu.br
+  
+* M.Sc. Paulo Barros (Estágio em Docência)<br>
+  PPG em Zootecnia (PPZ)<br>
+  pbarrosbio@gmail.com
+
+:::
+
+:::{.g-col-4}
+
+Nível: Graduação
+
+Curso: Ciências Biológicas
+
+Ano de Oferta: **2024/I**
+
+Modo: Híbrido
+
+:::
+
+
+:::
+
+## Objetivo Geral da Disciplina
+
+A disciplina visa fornecer aos discentes os fundamentos da genética quantitativa, apresentando as diferenças entre caracteres quantitativos e qualitativos, quanto ao tipo de herança, forma de estudo, tipo de variação e efeito de meio; mostrar os princípios básicos usados no melhoramento genético; estimar parâmetros genéticos importantes nos programas de melhoramento genético (correlações, herdabilidade, repetibilidade, etc); estudar a interação genótipos ambientes e, por fim, apresentar modernos estudos de genômica aplicada a caracteres quantitativos. 
+
+
+## Conteúdo Programático
+
+**I UNIDADE:**
+  
+  1. Revisão de estatística experimental com aplicação do software R;
+  
+  2. Modos de ação gênica;
+  
+  3. Bases genéticas dos caracteres poligênicos;
+  
+**II UNIDADE:**
+
+  4. Estimação de parâmetros genéticos e ambientais (herdabilidade e correlação);
+  
+  5. Principios de seleção e métodos de seleção;
+  
+  6. Interação genótipos x ambientes;
+
+**III UNIDADE:**
+
+  7. Estudos de associação (Mapeamento de QTLs, genes candidatos, seleção genômica, etc);
+  
+  8. Aplicações da genômica no melhoramento genético de plantas e animais e na saúde humana.
+
+
+
+## Slides, Notas de aula e Materiais
+
+Os materiais de aula ficarão disponíveis online para consulta gratuitamente. **Fica proibida a distribuição do material para comercialização.** Os materiais estarão identificados por ícones referenciados a seguir como:
+
+{{< fa brands r-project >}} Scripts em R
+
+{{< fa database >}} Conjuntos de dados
+
+{{< fa file-powerpoint >}} Slides da aula
+
+{{< fa file-lines >}} Notas de aula
+
+
+
+### Bons Estudos! {{< fa face-laugh-wink >}}

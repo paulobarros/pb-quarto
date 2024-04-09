@@ -1,0 +1,140 @@
+---
+title: "1.1 Manipulação de Dados"
+title-block-style: none
+title-block-banner: false
+page-layout: article
+lang: pt-BR
+toc: true
+---
+
+## Criando Projetos
+
+
+Antes de começarmos a falar de manipulação de dados, vamos falar sobre **projetos** no RStudio. Projetos são uma maneira prática e organizada de concentrar todos os recursos de um fluxo de análise de dados em um único local na sua máquina. Assim, seus scripts, dados, resultados, figuras, tudo proveniente do seu fluxo de trabalho está salvo em um mesmo diretório e de fácil acesso sempre que precisar.
+
+Crie um **novo projeto** acessando o menu do Rstudio em {{< fa caret-right >}} **File > New Project...**. Você pode criar previamente uma pasta para seu projeto e então escolher **Diretório Existente** nas opções, ou fornecer o nome para o **Novo Diretório** que será criado pelo próprio RStudio. Assim, no diretório criado/escolhido será salvo um arquivo com a extensão `.Rproj` que identificará o seu projeto. Clicando duas vezes nesse arquivo o seu projeto abre automaticamente no Rstudio e você está pronto para trabalhar. Para saber as vantagens de um projeto no Rstudio assista o vídeo a seguir.
+
+> Colocar Video Sobre Projeto!!
+
+
+## Importação de Dados
+
+O R suporta uma variedade de formatos de dados, os mais comuns talvez sejam os em formato de texto (`.csv`,`.txt`) e as famosas planilhas de Excel (`.xls`, `.xlsx`). Podemos importar nosso conjunto de dados de maneira visual indo na opção {{< fa caret-right >}} **Import Dataset** na aba **Environment**. A partir daí basta seguir as opções e clicar em importar ao final.
+
+Podemos também importar via código e evitar o trabalho de importar manualmente cada vez que precisemos trabalhar no nosso script. Para importar arquivos de Excel é necessário a instalação de um pacote adicional, o pacote `readxl`. É possível instalar pacotes indo na opção {{< fa caret-right >}} **Install** da aba **Packages**, ou rodar o comando `install.packages("nome dos pacotes")` como no exemplo à seguir. Dúvidas sobre como instalar pacotes `?install.packages`.
+
+
+```{r}
+#| eval: false
+install.packages("readxl")
+```
+
+
+Só precisamos instalar o pacote uma vez. Mas é necessário fazer o carregamento dos pacotes em cada utilização. Você pode optar por carregar todos os pacotes de uma única vez no início do script, ou ir carregando conforme a necessidade. Para carregar um pacote usamos a função `library()`.
+
+```{r}
+library(readxl)
+
+```
+
+Podemos então agora carregar nossos conjuntos de dados. Se atente para as diferentes funções e o formato de dados que elas utilizam.
+
+
+```{r}
+
+# Importa um arquivo CSV (Separado por Vírgulas)
+
+patosTexto <- read.csv("data/dadosPatos.csv")
+
+# Importa um arquivo no formato Excel
+
+patosExcel <- read_xls("data/dadosPatosExcel.xls")
+
+
+```
+
+Ao realizar a importação você vai poder observar na sua aba **Environment** os objetos `patosTexto` e `patosExcel` criados. Clicando neles abrirá um visualizador de dados, que também pode ser chamado usando a função `View()`.
+
+
+## Manipulando Dados
+
+### {{< fa box >}} `tidyverse`
+
+
+Para manipulação/tratamentos de dados utilizaremos o pacote `tidyverse`. Ele é uma coleção de pacotes voltados para todo o fluxo de manipulação de dados em um projeto de análise. Veremos algumas funções básicas mas recomendo a leitura do [{{< fa link >}} R for Data Science](https://r4ds.hadley.nz/){target="_blank"} para aqueles que desejam se aprofundar nas ferramentas do pacote. Lembrando de fazer a instalação do pacote  e seu carregamento antes de utilizar.
+
+```{r}
+#| eval: false
+install.packages("tidyverse")
+```
+
+Passando o olho na cara dos nossos dados ...
+
+```{r}
+
+# carrega o `tidyverse`
+library(tidyverse)
+
+# apresenta um resumo da estrutura dos dados
+glimpse(patosTexto)
+
+# Observando as primeiras linhas do dataset
+head(patosTexto)
+
+# Observando as últimas linhas do dataset
+tail(patosTexto)
+```
+
+### {{< fa filter >}} Filtros e Subsets
+
+É bastante comum num fluxo de análise de dados a realização de **filtros** e **subsets** (recorte) dos dados. O `tidyverse` tem funções que nos auxiliam bastante nessas tarefas.
+
+```{r}
+# Filtrando o conjunto de dados somente por Fêmeas
+femeasPato <- filter(patosTexto, SEXO == "F")
+femeasPato
+
+```
+
+Aqui estamos utilizando a função `filter` para filtrar as ocorrências da variável `SEXO == "F"`. Lembram-se quando discutimos que utilizar `<-` para atribuição é mais recomendado? Este é um exemplo. Aqui utilizamos o operador lógico de igualdade `==` para informar a nossa função qual categoria/nível da nossa variável categórica `SEXO` deverá ser selecionada no filtro. Ao mesmo tempo, criamos um novo objeto `femeasPato` que é um recorte (_subset_) dos nossos dados originais, agora filtrado.
+
+Podemos combinar múltiplos critérios de filtragem envolvendo variáveis distintas. Para isso combinamos nossas condições a serem testadas no filtro com operadores lógicos. No exemplo abaixo filtraremos as ocorrências de Machos do Grupo Genético `N` com valores da variável `PCC` acima de 1500.
+
+```{r}
+filter(patosTexto, GG == "N" & SEXO == "M" & PCC > 1500)
+```
+
+Vocês podem acessar o material da galera da [{{< fa link >}} Curso R](https://livro.curso-r.com/3-7-testes-l%C3%B3gicos.html){target="_blank"} se quiserem uma explicação mais detalhada sobre operações lógicas.
+
+
+### {{< fa hat-wizard >}} Usando o Pipe |>
+
+
+Uma das grandes vantagens do `tidyverse` é oferecer ferramentas que tornam rotinas usuais na análise de dados algo prático e intuitivo. Na realidade, regularmente precisamos realizar diversas operações em sequência ao manipular conjuntos de dados, e para isso podemos utilizar uma ferramenta chamada **pipe**, que é um operador que nos permite realizar multiplas operações em sequência sem a necessidade de armazenar o resultado de cada operação em um objeto. O pipe foi introduzido pelo `tidyverse` e atualmente o R adotou a prática e possui o seu operador de pipe nativo. É recomendado que você se acostume a adotar o pipe nativo da linguagem já que ele não requer o carregamento de pacotes adicionais como o `tidyverse`, e neste curso vamos apresentar os scripts com o pipe nativo. Vamos pra um exemplo que fica mais fácil de entender ...
+
+Vamos recuperar nosso último exemplo, no qual filtramos as ocorrências de Machos do Grupo Genético `N` com valores da variável `PCC` acima de 1500. E se além destes filtros, gostaríamos de fazer um subset somente pelas variáveis categóricas e `PCC`? Normalmente, teriamos que fazer nosso filtro, armazenando em um objeto novo, e posteriormente fazer o nosso subset armazenando em outro objeto, ou sobrescrevendo o anterior. Complicado não? Vamos ver como isso fica usando o pipe!
+
+```{r}
+# o nosso operador de pipe é |> 
+patosTexto |>
+  filter(GG == "N" & SEXO == "M" & PCC > 1500) |>
+  select(GG,SEXO,PCC) |>
+  arrange(desc(PCC))
+  
+```
+
+
+Muita informação mas vamos com calma! O nosso operador pipe é `|>`, isso indica para o R que uma operação virá na sequência, dessa forma, não precisamos explicitamente informar o nosso conjunto de dados dentro das funções, como vinhamos fazendo com o `filter` por exemplo. O conjunto de dados é declarado no início da sequência de operações, e é passado automaticamente como argumento para a função na outra ponta do pipe, e assim, as operações são realizadas em sequência. Muito bacana não? Fica bem fácil de compreender o que acontece no código.
+
+```{r}
+#| eval: false
+
+patosTexto |> # pegue no nosso dataset patosTexto
+  filter(GG == "N" & SEXO == "M" & PCC > 1500) |> # filtre com base nas condições estabelecidas
+  select(GG,SEXO,PCC) |> # selecione somente as colunas GG, SEXO e PCC
+  arrange(desc(PCC)) # e ordene as colunas decrescentemente pelo valor de PCC
+  
+```
+
+Durante nosso curso os scripts serão construídos utilizando o pipe pra que vocês se familiarizem com a construção das sequências de operações. Vale lembrar que para qualquer dúvida, basta consultar o `help()`, recomendo que visitem a ajuda da função `select` para mais casos de uso, é uma função que utilizaremos com bastante frequência.  
+

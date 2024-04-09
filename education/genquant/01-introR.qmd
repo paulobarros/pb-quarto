@@ -1,0 +1,138 @@
+---
+title: "1. Introdução ao R"
+title-block-style: none
+title-block-banner: false
+page-layout: article
+lang: pt-BR
+toc: true
+---
+
+## Introdução ao R
+
+
+::: {.callout-note title="Objetivos desta seção"}
+* Introduzir a linguagem R
+  + Diferenciar o R do Rstudio
+  + Entender os componentes do Rstudio
+  + Compreender os tipos básicos de objetos da linguagem
+  + Operações matemáticas e de comparação
+
+:::
+
+
+## {{< fa brands r-project >}} x RStudio
+
+O {{< fa brands r-project >}} é uma **linguagem de programação** voltada a estatística.
+É uma linguagem gratuita, que funciona através de componentes chamados **pacotes** que são
+conjuntos de funções dedicadas a resolução de tarefas específicas. 
+
+Existem pacotes disponíveis para as mais diversas aplicações e áreas do conhecimento. O {{< fa brands r-project >}} já vem de fábrica com uma base de pacotes instalados, e o usuário pode adicionar pacotes extras que aumentam a capacidade da linguagem.
+
+O **RStudio** por sua vez é um ambiente de desenvolvimento para aplicações em R. É um programa que nos oferece diversas ferramentas que facilitam a organização, criação e o teste de códigos e scripts escritos em R. Tanto o {{< fa brands r-project >}} quanto o RStudio estão disponíveis para diversas versões de sistemas operacionais.
+
+
+## Instalando o {{< fa brands r-project >}} e o RStudio
+
+::: {.callout-warning title="Importante"}
+Na hora de fazer o download do R e do Rstudio observar qual tipo de sistema operacional roda no seu computador (Windows, Linux ou MacOS).
+:::
+
+
+
+Neste link vocês poderão [{{< fa link >}} Baixar o R e o Rstudio](https://posit.co/download/rstudio-desktop/){target="_blank"} , é importante lembrar que **ambos precisam ser baixados e instalados!**, o RStudio precisa do R instalado para funcionar. A instalação é padrão, basta aceitar as configurações de fábrica.
+
+
+## Conhecendo o RStudio
+
+Assiste esse vídeo aqui e volta!
+
+## Objetos e Estruturas de Dados
+
+Em R tudo que criamos é um **objeto**. De variáveis, a funções, a conjunto de dados. Tudo são objetos, e aprender a manipular estes objetos é de enorme importância no seu aprendizado da linguagem. Não entraremos em detalhes neste curso, mas nas referências de material poderão encontrar sugestões de fontes de estudo para aprofundarem o conhecimento da linguagem.
+
+No R, escrevemos instruções em um **script** e executamos, a resposta aos nossos códigos é mostrada no **console**. Podemos incorporar comentários nos nossos scripts de maneira a organizar nosso código ou fornecer informações sobre o que estamos fazendo. Um comentário é iniciado com `#` e tudo após é interpretado como texto no R. Podemos também pedir ajuda sobre funções, pacotes ou tópicos utilizando a função `help()` ou colocando `?` antes de qualquer palavra.
+
+No R utilizamos `<-` para indicar que estamos atribuindo um valor a um objeto. Também tem o mesmo efeito de utilizar o sinal de `=`, entretanto, recomendo que utilize a seta pois o `=` também é utilizado para fornecer argumentos na chamada de uma função, e isso as vezes pode ficar confuso em um script.
+
+
+```{r}
+# Isso é um comentário no nosso código
+
+
+pares <- c(2,4,6,8,10,12) # vetor numérico
+decimais <- c(1.3,4.2,1.4,2.1,3.6,5.2) # vetor numérico
+frutas <- c("banana","laranja","maçã","abacaxi","uva","melancia") # vetor de caracteres
+logicos <- c(TRUE,FALSE,FALSE,TRUE,TRUE,FALSE) # vetor lógico (verdadeiro/falso)
+
+
+# O código abaixo cria uma Matriz com 3 colunas
+# Matrizes só podem conter valores numéricos
+
+m1 <- matrix(c(pares,decimais),ncol = 2)
+m1
+
+
+# o data.frame pode combinar valores numéricos, lógicos e de caracteres
+df <- data.frame(pares,decimais,frutas,logicos)
+df
+
+# Não tenha medo de pedir ajuda! help()
+help(data.frame)
+
+
+```
+
+Podemos acessar os itens dentro de cada tipo de objeto utilizando o índice que representa a posição daquele item. Vetores são unidimensionais, só temos uma coordenada. Matrizes possuem linhas e colunas, assim como os data frames. Nos data frames, podemos usar o `$` para selecionar as colunas pelo nome.
+
+```{r}
+
+pares[1] # extrai o primeiro valor do vetor
+
+m1[3,2] # extrai o valor na terceira linha e na segunda coluna da matriz
+
+df$frutas[1] # acessa a coluna frutas e extrai o primeiro elemento da coluna
+
+df$logicos # retorna todas as observacoes da coluna logicos
+
+df[,1] # mais uma maneira de acessar colunas no data.frame
+
+df[1:2,] # retorna as duas primeiras linhas do data frame
+
+df[1:2,"logicos"] # também é possível indexar as colunas pelos nomes
+```
+
+Num fluxo de análise de dados comumente precisamos realizar operações matemáticas ou comparações para filtros de valores/categorias. Mas nós vamos aprender isso de uma maneira mais didática nas próximas sessões, por enquanto basta que vocês conheçam os operadores.
+
+```{r}
+#| eval: false
+
++ - / * # operadores matemáticos de soma, subtração, divisão e multiplicação
+  
+^ # exponencial 
+  
+# Operadores Lógicos
+  
+== # igualdade
+  
+>= # maior ou igual
+  
+<= # menor ou igual
+  
+!= # diferente
+
+& # e (and) lógico
+  
+| # ou (or) lógico
+```
+
+## Porque usar o {{< fa brands r-project >}}?
+
+* É gratuito e de código aberto
+
+* Facilita a colaboração e a reprodutibilidade na pesquisa científica
+
+* Pode abrir portas para oportunidades de trabalho
+
+* Ampla adoção pela Academia e Indústria
+
+* {{< fa brands r-project >}} é divertido! {{< fa face-laugh-squint >}}
