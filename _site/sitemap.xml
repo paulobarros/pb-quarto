@@ -2,30 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://paulobarros.com.br/index.html</loc>
-    <lastmod>2024-04-01T00:13:45.301Z</lastmod>
+    <lastmod>2025-01-04T14:42:21.696Z</lastmod>
   </url>
   <url>
     <loc>https://paulobarros.com.br/about.html</loc>
-    <lastmod>2024-04-01T00:13:44.537Z</lastmod>
-  </url>
-  <url>
-    <loc>https://paulobarros.com.br/posts/en.html</loc>
-    <lastmod>2024-04-01T00:13:43.825Z</lastmod>
-  </url>
-  <url>
-    <loc>https://paulobarros.com.br/posts/pt.html</loc>
-    <lastmod>2024-04-01T00:13:41.857Z</lastmod>
+    <lastmod>2025-01-04T14:42:11.059Z</lastmod>
   </url>
   <url>
     <loc>https://paulobarros.com.br/posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt/index.html</loc>
-    <lastmod>2024-04-01T00:13:43.401Z</lastmod>
+    <lastmod>2024-08-13T22:21:30.413Z</lastmod>
   </url>
   <url>
-    <loc>https://paulobarros.com.br/index-us.html</loc>
-    <lastmod>2024-04-01T00:13:44.133Z</lastmod>
+    <loc>https://paulobarros.com.br/posts/pt.html</loc>
+    <lastmod>2024-08-13T22:21:30.413Z</lastmod>
+  </url>
+  <url>
+    <loc>https://paulobarros.com.br/posts/index.html</loc>
+    <lastmod>2025-01-04T13:54:53.373Z</lastmod>
   </url>
   <url>
     <loc>https://paulobarros.com.br/services.html</loc>
-    <lastmod>2024-04-01T00:13:44.893Z</lastmod>
+    <lastmod>2024-08-13T22:21:30.413Z</lastmod>
   </url>
 </urlset>

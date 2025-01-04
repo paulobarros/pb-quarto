@@ -8,7 +8,7 @@ freeze: true
 title-block-banner: true
 
 # Enable CC licence appendix
-license: "CC BY"
+#license: "CC BY"
 
 # Default for table of contents
 toc: true
@@ -22,12 +22,5 @@ execute:
   warning: true
 
 # Default fields for citation
-citation: true
+citation: false
 
-
-# Default Author
-# author:
-#   - name: Paulo Barros
-#     url: https://paulobarros.com.br
-#     affiliation: LABHERPETO-UESB
-#     orcid: 0000-0001-7648-6578

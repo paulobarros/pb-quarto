@@ -21,29 +21,16 @@ about:
 
 ### Formação
 
-##### {{< fa graduation-cap >}} **Doutorando em Zootecnia (Melhoramento Genético Animal) ** {{< fa caret-right >}} Atualmente <br>&emsp;&emsp;Universidade Estadual do Sudoeste da Bahia (UESB)
+{{< fa graduation-cap >}} **Doutorando em Zootecnia (Melhoramento Genético Animal) ** {{< fa caret-right >}} Atualmente <br>&emsp;&emsp;Universidade Estadual do Sudoeste da Bahia (UESB)
 
-##### {{< fa graduation-cap >}} **M.Sc. em Genética, Biodiversidade e Conservação ** {{< fa caret-right >}} 2024 <br>&emsp;&emsp;Universidade Estadual do Sudoeste da Bahia (UESB)
+{{< fa graduation-cap >}} **M.Sc. em Genética, Biodiversidade e Conservação ** {{< fa caret-right >}} 2024 <br>&emsp;&emsp;Universidade Estadual do Sudoeste da Bahia (UESB)
 
-##### {{< fa graduation-cap >}} **B.Sc. em Ciências Biológicas** {{< fa caret-right >}} 2020 <br>&emsp;&emsp;Universidade Estadual do Sudoeste da Bahia (UESB)
+{{< fa graduation-cap >}} **B.Sc. em Ciências Biológicas** {{< fa caret-right >}} 2020 <br>&emsp;&emsp;Universidade Estadual do Sudoeste da Bahia (UESB)
 
 ### Interesses
 
 Ciência de Dados, Genética Quantitativa, Genômica, Análises Ecológicas.
 :::
-
-# Senta que lá vem história ...
-
-
-Sou um Nordestino do interior da Bahia, parceiro da Liz, pai do Otto, que já fez meio mundo de coisas nessa vida. Comecei minha formação na área de TI em Sistemas de Informação, trabalhando como desenvolvedor web até abandonar o curso no último semestre. Loucura? Me apaixonei pela fotografia, e esta me levou a observação de aves, o que se tornaria minha porta de entrada para a Biologia.
-
-Entrei na Biologia achando que passaria o dia no mato vendo passarinho, me vi no meio do curso atraído pela Estatística e Ciência de Dados e desde então estou em um relacionamento sério com o [{{< fa brands r-project size=2xl >}}](https://cran.r-project.org/){target="_blank"}. Pra quem jurou nunca mais programar na vida, paguei a língua e hoje é parte da minha rotina diária. A estatística me permite colaborar em trabalhos super interessantes dos mais diversos grupos. Mas meu amor pela Ornitologia continua!!
-
-No Mestrado conheci outro mundo, o da Herpetologia, e não sabia que iria achar temas e espécies tão interessantes. Hoje adoro sair a noite na roça pra ver sapos, rãs e pererecas. Faço parte do Laboratório de Herpetologia da UESB, coordenado pela minha orientadora de Mestrado Dr<sup>a</sup>. Juliana Zina. No laboratório aprendi a importância dos trabalhos de História Natural e das coleções científicas. E aprendi a amar ainda mais a Caatinga graças a beleza dos Anuros que lá vivem. Meu carinho pela herpetologia se tornou tão grande que gerou o [amphiBR](https://paulobarros.github.io/amphiBR/index.html){target="_blank"}, um pacote do R que concentra a lista oficial de espécies de anfíbios do Brasil e outros datasets interessantes.
-
-Atualmente sou **Doutorando em Zootecnia** (Melhoramento Genético Animal) no [PPG em Zootecnia da UESB](http://www2.uesb.br/ppg/ppz/). No meu doutorado pretendo trabalhar com estratégias para derivação de novos fenótipos a partir de dados coletados automaticamente por robôs em fazendas. Estes novos fenótipos poderão ser utilizados em programas de melhoramento genético para Seleção Genômica Ampla (_Genome Wide Selection_ - GWS) e Estudos de Associação (_Genome Wide Association Studies_ - GWAS), buscando identificar marcadores associados a genes de interesse para características como bem estar animal, resistência a patógenos, estresse térmico, entre outros. Faço parte do **Grupo de Pesquisa em Genômica Aplicada à Conservação e Melhoramento (GACOM)** coordenado pelo meu orientador Dr. Paulo Carneiro, no qual realizamos trabalhos com diversas espécies de animais de produção, incluindo trabalhos de conservação de raças naturalizadas do Brasil.
-
-Nas minhas horas livres gosto de sair para observar aves e fazer trilhas, ir para a roça, ouvir música (de quase tudo um pouco!), e sou fã de filmes, séries e esportes. NFL, NBA e a Fórmula 1 tem espaço fixo no meu calendário.
 
 
 

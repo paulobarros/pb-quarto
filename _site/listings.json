@@ -1,22 +1,14 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt/index.html"
-    ]
-  },
-  {
-    "listing": "/posts/en.html",
-    "items": []
-  },
-  {
     "listing": "/posts/pt.html",
     "items": [
       "/posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt/index.html"
     ]
   },
   {
-    "listing": "/index-us.html",
-    "items": []
+    "listing": "/posts/index.html",
+    "items": [
+      "/posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt/index.html"
+    ]
   }
 ]

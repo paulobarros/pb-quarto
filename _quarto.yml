@@ -3,29 +3,27 @@ project:
 
 website:
   title: "PAULO BARROS"
+  favicon: favicon-32x32.png
   twitter-card:
     creator: "@pbarrosjr"
     image: "https://www.paulobarros.com.br/Avatar2023.png"
   site-url: "https://paulobarros.com.br"
   navbar:
-      logo: MM.png
+      logo: g1.png
+      title: false
       right:
       - text: Bio
         file: about.qmd
       - text: Posts
         menu:
-          - text: English (US)
-            file: index-us.qmd
           - text: Portuguese (BR)
-            file: index.qmd
-      - text: Serviços
-        file: services.qmd
+            file: posts/index.qmd
       - icon: github
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
   page-footer:
-    left: "Blog made with [Quarto](https://quarto.org/) and very much inspired by [Beatriz Milz](https://beamilz.com/) & [Danielle Navarro](https://blog.djnavarro.net/). License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
+    left: "Blog made with [Quarto](https://quarto.org/). License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
     right:
       - icon: github
         href: https://github.com/
