@@ -9,12 +9,12 @@ website:
     image: "https://www.paulobarros.com.br/Avatar2023.png"
   site-url: "https://paulobarros.com.br"
   navbar:
-      logo: g1.png
-      title: false
+      logo: LogoPB_wb.png
+      #title: true
       right:
-      - text: Bio
+      - text: BIO
         file: about.qmd
-      - text: Posts
+      - text: POSTS
         menu:
           - text: Portuguese (BR)
             file: posts/index.qmd

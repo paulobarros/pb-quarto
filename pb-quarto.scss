@@ -5,43 +5,41 @@ $theme: "litera" !default;
 
 // import google fonts
 
-/*@import 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap';*/
+@import 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap';
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import 'https://fonts.googleapis.com/css2?family=Carrois+Gothic';
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible';
-@import 'https://fonts.googleapis.com/css2?family=Actor';
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-@import 'https://fonts.googleapis.com/css2?family=Major+Mono+Display';
-@import 'https://fonts.googleapis.com/css2?family=Quando';
-@import 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700&display=swap';
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
 
 
+$red-primary: #ee2740;
 
-$font-family-sans-serif:  "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-code: "JetBrains Mono", sans-serif, !default;
+$font-family-sans-serif:  "Gabarito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-code: "Fira Code", sans-serif, !default;
 $navbar-bg: #FFFFFF;
-$h1-font-size: 1.2em;
+$font-size-root: 1em;
+$h1-font-size: 1.6em;
 $h5-font-size: 0.8em;
 $toc-font-size: .8em;
-$code-bg: #2b2d41ce;
-$code-color: #edf2f4;
-$toc-color: #ee2740;
-$toc-active-border: #ee2740;
+$code-bg: rgb(55 55 55);
+$code-color: rgb(255 255 255);
+$toc-color: $red-primary;
+$toc-active-border: $red-primary;
+$navbar-hl: $red-primary;
+$footer-bg: $red-primary;
+$footer-fg: #FFFFFF;
+$body-color: #595959;
 
+$font-family-text: "Roboto Condensed", sans-serif;
 
 
 /*-- scss:rules --*/
 
 // litera is serif by default: revert to san-serif
 p {
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-text;
   font-size: 1rem;
   font-weight: 400;
-  
 }
 
 
@@ -55,3 +53,18 @@ p {
   
 }
 
+p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
+  font-weight: 500;
+}
+
+.navbar-title {
+  font-size: 1em;
+  color: rgb(39 35 35);
+  font-family: "Gabarito", sans-serif;
+  font-weight: 500;
+}
+
+h1.title {
+  color: $red-primary;
+  font-weight: 400;
+}
