@@ -68,3 +68,18 @@ h1.title {
   color: $red-primary;
   font-weight: 400;
 }
+
+.btn-custom-material {
+    background-color: white;
+    border: 1px solid $red-primary; /* Borda azul */
+    color: $red-primary; /* Texto azul */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .btn-custom-material:hover {
+    background-color: $red-primary; /* Cor de fundo azul ao passar o mouse */
+    color: white; /* Texto branco */
+  }
+
+.feat-img {
+margin: 8px;  
+}

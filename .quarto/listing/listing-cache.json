@@ -5,6 +5,9 @@
     ],
     "posts/index.qmd": [
       "**/*/index.qmd"
+    ],
+    "teaching/index.qmd": [
+      "**/*/index.qmd"
     ]
   }
 }

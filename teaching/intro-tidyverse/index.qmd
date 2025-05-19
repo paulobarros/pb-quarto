@@ -1,0 +1,47 @@
+---
+title: "Introdução ao R com `tidyverse`"
+subtitle: "Short Course: Introdução a Ciência de Dados com R e `tidyverse`"
+author: Paulo Barros
+#image: LogoTidy.png
+categories: ["Short Course"]
+format:
+  html:
+    include-in-header: 
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+editor: source
+---
+
+
+# **Introdução ao R e `tidyverse`** 
+
+<img class="feat-img" src="LogoTidy.png" align="right" width="30%" min-width="120px"/>
+
+## Descrição
+
+Este é um curso introdutório a Linguagem de Programação  com tidyverse.
+Esse material foi desenvolvido como suporte as atividades do Grupo de Pesquisas em Genômica Aplicada a Conservação e Melhoramento (GACOM) na Universidade Estadual do Sudoeste da Bahia (UESB), campus Jequié. O objetivo deste curso é oferecer aos alun@s um primeiro contato com a linguagem. Este material pode ser compartilhado desde que não seja comercializado. Agradecemos qualquer comentário e sugestão de correção ou melhoria do material.
+
+## Materiais
+
+<div class="mt-4 d-flex flex-row flex-wrap gap-1 justify-content-left justify-content-sm-start" role="group" aria-label="Links">
+  <!-- <a href="https://mauriciovancine.github.io/workshop-qgis/01_slides/slides.html" class="btn btn-custom text-capitalize" target="_blank"><i class="fas fa-image me-1"></i>slides</a> -->
+  <a href="https://paulobarros.github.io/intro_r_tidyverse/" class="btn btn-custom-material text-capitalize" target="_blank"><i class="fa-brands fa-square-github fa-2xl me-1"></i>material</a>
+</div>
+
+## Oferecimento
+
+#### Maio/2025
+
+Curso rápido oferecido na disciplina **Estatística Aplicada**, no Programa de Pós-Graduação
+em Genética, Biodiversidade e Conservação (**PPGGBC**) da Universidade Estadual do 
+Sudoeste da Bahia (UESB) no campus de Jequié. 
+
+
+#### Julho/2024
+
+Curso rápido oferecido na disciplina **Métodos Estatísticos Multivariados**, no 
+Programa de Pós-Graduação em Genética, Biodiversidade e Conservação (**PPGGBC**) da
+Universidade Estadual do Sudoeste da Bahia (UESB) no campus de Jequié.
+
+

@@ -10,5 +10,11 @@
     "items": [
       "/posts/2021-07-15_manuscritos_cientificos_rmarkdown/pt/index.html"
     ]
+  },
+  {
+    "listing": "/teaching/index.html",
+    "items": [
+      "/teaching/intro-tidyverse/index.html"
+    ]
   }
 ]

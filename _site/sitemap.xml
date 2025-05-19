@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://paulobarros.com.br/teaching/intro-tidyverse/index.html</loc>
+    <lastmod>2025-05-19T14:47:15.389Z</lastmod>
+  </url>
+  <url>
     <loc>https://paulobarros.com.br/index.html</loc>
     <lastmod>2025-04-04T13:30:57.745Z</lastmod>
   </url>
@@ -23,5 +27,9 @@
   <url>
     <loc>https://paulobarros.com.br/services.html</loc>
     <lastmod>2024-08-13T22:21:30.413Z</lastmod>
+  </url>
+  <url>
+    <loc>https://paulobarros.com.br/teaching/index.html</loc>
+    <lastmod>2025-05-19T14:49:50.857Z</lastmod>
   </url>
 </urlset>

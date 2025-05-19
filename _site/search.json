@@ -1,5 +1,33 @@
 [
   {
+    "objectID": "teaching/intro-tidyverse/index.html",
+    "href": "teaching/intro-tidyverse/index.html",
+    "title": "Introdução ao R com tidyverse",
+    "section": "",
+    "text": "Este é um curso introdutório a Linguagem de Programação com tidyverse. Esse material foi desenvolvido como suporte as atividades do Grupo de Pesquisas em Genômica Aplicada a Conservação e Melhoramento (GACOM) na Universidade Estadual do Sudoeste da Bahia (UESB), campus Jequié. O objetivo deste curso é oferecer aos alun@s um primeiro contato com a linguagem. Este material pode ser compartilhado desde que não seja comercializado. Agradecemos qualquer comentário e sugestão de correção ou melhoria do material.\n\n\n\n\n material\n\n\n\n\n\n\nCurso rápido oferecido na disciplina Estatística Aplicada, no Programa de Pós-Graduação em Genética, Biodiversidade e Conservação (PPGGBC) da Universidade Estadual do Sudoeste da Bahia (UESB) no campus de Jequié.\n\n\n\nCurso rápido oferecido na disciplina Métodos Estatísticos Multivariados, no Programa de Pós-Graduação em Genética, Biodiversidade e Conservação (PPGGBC) da Universidade Estadual do Sudoeste da Bahia (UESB) no campus de Jequié."
+  },
+  {
+    "objectID": "teaching/intro-tidyverse/index.html#descrição",
+    "href": "teaching/intro-tidyverse/index.html#descrição",
+    "title": "Introdução ao R com tidyverse",
+    "section": "",
+    "text": "Este é um curso introdutório a Linguagem de Programação com tidyverse. Esse material foi desenvolvido como suporte as atividades do Grupo de Pesquisas em Genômica Aplicada a Conservação e Melhoramento (GACOM) na Universidade Estadual do Sudoeste da Bahia (UESB), campus Jequié. O objetivo deste curso é oferecer aos alun@s um primeiro contato com a linguagem. Este material pode ser compartilhado desde que não seja comercializado. Agradecemos qualquer comentário e sugestão de correção ou melhoria do material."
+  },
+  {
+    "objectID": "teaching/intro-tidyverse/index.html#materiais",
+    "href": "teaching/intro-tidyverse/index.html#materiais",
+    "title": "Introdução ao R com tidyverse",
+    "section": "",
+    "text": "material"
+  },
+  {
+    "objectID": "teaching/intro-tidyverse/index.html#oferecimento",
+    "href": "teaching/intro-tidyverse/index.html#oferecimento",
+    "title": "Introdução ao R com tidyverse",
+    "section": "",
+    "text": "Curso rápido oferecido na disciplina Estatística Aplicada, no Programa de Pós-Graduação em Genética, Biodiversidade e Conservação (PPGGBC) da Universidade Estadual do Sudoeste da Bahia (UESB) no campus de Jequié.\n\n\n\nCurso rápido oferecido na disciplina Métodos Estatísticos Multivariados, no Programa de Pós-Graduação em Genética, Biodiversidade e Conservação (PPGGBC) da Universidade Estadual do Sudoeste da Bahia (UESB) no campus de Jequié."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "PAULO BARROS",
@@ -81,14 +109,14 @@
     "href": "posts/pt.html",
     "title": "Paulo Barros",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nGerando manuscritos acadêmicos com referências utilizando Rmarkdown\n\n\nGerenciar referências não precisa ser uma dor de cabeça! \n\n\n\nRmarkdown\n\n\nABNT\n\n\n\n\n\n\nJul 15, 2021\n\n\nPaulo Barros\n\n\n16 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nGerando manuscritos acadêmicos com referências utilizando Rmarkdown\n\n\n\nRmarkdown\n\nABNT\n\n\n\n\n\n\nJul 15, 2021\n\n\nPaulo Barros\n\n16 min\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/index.html",
     "href": "posts/index.html",
     "title": "Posts",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nGerando manuscritos acadêmicos com referências utilizando Rmarkdown\n\n\nGerenciar referências não precisa ser uma dor de cabeça!\n\n\n\nJul 15, 2021\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nGerando manuscritos acadêmicos com referências utilizando Rmarkdown\n\n\nGerenciar referências não precisa ser uma dor de cabeça!\n\n\n\nJul 15, 2021\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "services.html",
@@ -96,5 +124,12 @@
     "title": "Serviços Acadêmicos",
     "section": "",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis dapibus ante, ac finibus odio lacinia id. Etiam faucibus, turpis in auctor malesuada, sapien sapien tristique erat, vitae dignissim risus lectus aliquam ipsum. Nam erat magna, eleifend vestibulum odio ac, faucibus suscipit ex. Nulla egestas dapibus fringilla. Nam lobortis orci in elit dapibus eleifend. Morbi congue ex nec lobortis egestas. Praesent odio turpis, condimentum quis vestibulum vitae, maximus eget libero. Nulla quis ipsum nec ex venenatis malesuada. Cras pulvinar enim quis dui feugiat suscipit quis nec neque. Etiam non ante sed odio pulvinar pulvinar. Suspendisse eu nisi mollis, tincidunt odio sagittis, gravida elit. Integer id est feugiat, luctus ipsum vel, commodo ipsum. Vestibulum nibh ligula, commodo vel leo id, condimentum ornare massa. Nunc eget malesuada libero. Cras pretium ullamcorper ipsum. Curabitur pellentesque velit ligula, vel facilisis lacus luctus tempus.\n\n\n\n\n Consultoria Estatística\n\n\n\n\n\n\n\n\n\n Redação Científica\n\n\n\n\n Análise de dados   Visualização de dados para publicações   Curadoria e Processamento de dados\n\n\n Revisão de relatórios e projetos   Tradução de Artigos   Consultoria em Projetos para processos seletivos\n\n\n\n\n Análises Espaciais (GIS)\n\n\n\n\n\n\n\n\n\n Educação\n\n\n\n\n Criação de Mapas Georeferenciados   Curadoria e Processamento de dados espaciais   Análise de dados Geoespaciais\n\n\n Cursos em Ciência de Dados e GIS   Ferramentas Digitais na produção acadêmica   Palestras de Divulgação Científica\n\n\n   Solicite um orçamento!"
+  },
+  {
+    "objectID": "teaching/index.html",
+    "href": "teaching/index.html",
+    "title": " Teaching",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nIntrodução ao R com tidyverse\n\n\n\nPaulo Barros\n\n\n\n\n\n\nNo matching items"
   }
 ]
