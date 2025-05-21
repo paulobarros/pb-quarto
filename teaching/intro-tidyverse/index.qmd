@@ -2,7 +2,7 @@
 title: "Introdução ao R com `tidyverse`"
 subtitle: "Short Course: Introdução a Ciência de Dados com R e `tidyverse`"
 author: Paulo Barros
-#image: LogoTidy.png
+image: thumb.png
 categories: ["Short Course"]
 format:
   html:
@@ -25,9 +25,16 @@ Esse material foi desenvolvido como suporte as atividades do Grupo de Pesquisas 
 ## Materiais
 
 <div class="mt-4 d-flex flex-row flex-wrap gap-1 justify-content-left justify-content-sm-start" role="group" aria-label="Links">
-  <!-- <a href="https://mauriciovancine.github.io/workshop-qgis/01_slides/slides.html" class="btn btn-custom text-capitalize" target="_blank"><i class="fas fa-image me-1"></i>slides</a> -->
+  <a href="https://paulobarros.github.io/intro_r_tidyverse/slides/intro-tidy-revealjs.html" class="btn btn-custom-material text-capitalize" target="_blank"><i class="fa-regular fa-file-powerpoint fa-2xl me-1"></i>slides</a>
   <a href="https://paulobarros.github.io/intro_r_tidyverse/" class="btn btn-custom-material text-capitalize" target="_blank"><i class="fa-brands fa-square-github fa-2xl me-1"></i>material</a>
 </div>
+
+<!--
+<div>
+```{=html}
+<iframe class="slide-deck" src="https://paulobarros.github.io/intro_r_tidyverse/slides/intro-tidy-revealjs.html"></iframe>
+```
+</div> -->
 
 ## Oferecimento
 

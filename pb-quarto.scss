@@ -70,16 +70,26 @@ h1.title {
 }
 
 .btn-custom-material {
-    background-color: white;
-    border: 1px solid $red-primary; /* Borda azul */
-    color: $red-primary; /* Texto azul */
+    background-color: $red-primary;
+    /*border: 1px solid $red-primary; */
+    color: white;
     transition: background-color 0.3s, color 0.3s;
+    border-radius: 15px;
+    font-family: "Gabarito", sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
   }
   .btn-custom-material:hover {
-    background-color: $red-primary; /* Cor de fundo azul ao passar o mouse */
+    background-color: #2b2d41ff; /* Cor de fundo azul ao passar o mouse */
     color: white; /* Texto branco */
   }
 
 .feat-img {
 margin: 8px;  
+}
+
+.slide-deck {
+    border: 3px solid #dee2e6;
+    width: 100%;
+    height: 475px;
 }
